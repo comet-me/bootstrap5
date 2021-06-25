@@ -167,39 +167,7 @@
 </div>
     <!-- end of Modal -->
 
-  <script>
-         //Get the button
-         let mybutton = document.getElementById("btn-back-to-top");
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-        scrollFunction();
-        };
-        function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-        mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-        }
-        // When the user clicks on the button, scroll to the top of the document
-        mybutton.addEventListener("click", backToTop);
-        function backToTop() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        function CopyToClipboard(contentt)
-          {
-            var r = document.createRange();
-            r.selectNode(document.getElementById(contentt));
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(r);
-            document.execCommand('copy');
-            window.getSelection().removeAllRanges();
-          }
-  </script>
+  <script src="js/myscript.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <script src="vendor/popper.js/dist/popper.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
