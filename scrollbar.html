@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap v5</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="/index.html"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Grid
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted" aria-disabled="true">Grid and Flexbox</li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Utilities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted" aria-disabled="true">Utilities</li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                <li><a class="dropdown-item" href="text.html">Text</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Compontents
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted" aria-disabled="true">Content & Components</li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                JavaScript
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-item text-muted" aria-disabled="true">JavaScript</li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
+                    <li><a class="dropdown-item" href="modal.html">Modal</a></li>
+                    <li><a class="dropdown-item" href="accordion.html">Collapse</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Heading Container -->
+    <div class="container text-center">
+      <h1 class="display-4 mt-4 pt-5">Scrollbar Custom
+          <a href="#" target="_blank" class="text-dark">
+              <span class="h1" title="See offical documentation">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+          </a>
+      </h1>
+      <div class="d-sm-none">
+          <h1>XS</h1>
+          <h5>Portrait Phones</h5>
+          <h6>&#60;576px</h6>
+      </div>                
+      <div class="d-none d-sm-block d-md-none">
+          <h1>SM</h1>
+          <h5>Landscape Phones</h5>
+          <h6>&ge;576px to &#60;768px</h6>
+      </div>
+      <div class="d-none d-md-block d-lg-none">
+          <h1>MD</h1>
+          <h5>Tablets</h5>
+          <h6>&ge;768px to &#60;992px</h6>
+      </div>
+      <div class="d-none d-lg-block d-xl-none">
+          <h1>LG</h1>
+          <h5>Laptops</h5>
+          <h6>&ge;992px to &#60;1200px</h6>
+      </div>
+      <div class="d-none d-xl-block">
+          <h1>XL</h1>
+          <h5>Desktops</h5>
+          <h6>&ge;1200px</h6>
+      </div>
+    </div>
+      <!-- ############ START HERE ############ -->
+      <div id="main-container" class="container">
+
+        <!-- ***** Container ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Container</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.container</code>
+        </div>
+
+    <!-- # Code Example # -->
+
+    <!-- TODO: example 1 - Container -->
+    <h5><i class="bi bi-info-circle"></i> Working on a not full screen</h5>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi dolorem architecto reprehenderit laudantium ullam repellat fuga quidem temporibus alias perferendis iure cupiditate laborum dicta voluptate libero unde praesentium ducimus tempore dignissimos ipsam voluptatibus eos, ad distinctio? Commodi repellendus quibusdam voluptatem fugiat doloremque odit repudiandae accusamus, nihil inventore est sequi magni laborum, dolores tempora! Error hic voluptate beatae ullam aliquid similique nam sunt veniam harum unde provident, nesciunt rem illum asperiores maxime tempora. Esse, rerum quod deserunt ipsa autem tempore voluptate necessitatibus iste aperiam voluptatibus illo accusantium. Provident perferendis neque illum ratione mollitia dolorem sint! Quas natus architecto ratione explicabo labore ipsam sunt corporis quis nobis fuga! Vel ex quod ut vitae, quam facere unde asperiores tempora magnam. Cumque repellendus neque ullam distinctio quidem consectetur ex quae vero! Ipsum, tempora quasi suscipit obcaecati, repudiandae delectus consequuntur perspiciatis doloribus laudantium quae ullam nulla modi temporibus blanditiis excepturi! Hic aspernatur nulla, dolor necessitatibus aliquid adipisci ullam at officiis optio fugiat incidunt temporibus. Consequuntur, nam alias? Architecto quasi eligendi nam, laboriosam aut error officia sapiente nisi porro fugit sunt praesentium tempore deleniti vel earum dolorem nihil modi dignissimos similique! Itaque consequuntur voluptatibus quos. Eos corporis provident, aspernatur fugit, dolorum et temporibus illum tempora iusto quae molestiae sit at sunt. Ad laboriosam nam mollitia placeat perspiciatis esse quia exercitationem aliquid, facere quaerat aut in aliquam! Consequatur blanditiis maiores ratione. Quod pariatur, enim magnam ratione id nobis asperiores sed, similique minima autem tempore. Porro illum eligendi quas beatae reiciendis. Molestias quibusdam amet recusandae tenetur, ullam hic quaerat sequi? Consequuntur aliquam exercitationem qui esse. Quibusdam, alias dicta aliquid voluptatem voluptates aspernatur porro repudiandae! Asperiores praesentium vel modi ducimus, vitae consectetur aperiam! Vitae doloremque voluptatibus animi cupiditate minus pariatur, officia tempora voluptas exercitationem facere, sequi mollitia voluptatem doloribus iste, illo delectus ut porro debitis amet hic est aut? Eos laborum qui culpa veritatis velit quisquam nam necessitatibus, recusandae deserunt praesentium magni delectus non modi neque molestias sunt rem distinctio soluta ea, saepe perferendis. Incidunt corporis possimus eveniet, dolor amet distinctio laboriosam sequi quia asperiores similique recusandae, odio doloremque explicabo omnis dignissimos non iusto repudiandae ullam, ab totam molestiae nostrum! Nisi adipisci quas distinctio iusto repudiandae odit reiciendis deleniti sapiente atque. Tempora soluta eos ratione odio, sit ab odit sunt modi asperiores aliquam molestias, commodi ullam quo facere doloremque, tempore mollitia autem! Delectus minus dolores reprehenderit dignissimos pariatur sapiente porro, blanditiis veritatis itaque exercitationem quidem eaque assumenda beatae. Doloribus deserunt consequatur porro maiores fugiat cupiditate, culpa cumque, facere ducimus dignissimos saepe? Repudiandae minima ducimus praesentium modi illo recusandae sunt necessitatibus atque magni dicta similique deleniti, minus facilis. Distinctio accusamus tempora voluptatem velit sequi eum. Unde laboriosam dolor commodi excepturi rerum, enim deserunt sequi nulla quaerat aspernatur iusto tenetur. Culpa blanditiis enim autem ipsum rem facilis molestias ea, distinctio nesciunt nihil voluptatibus repudiandae reprehenderit delectus qui deleniti ratione. Quia consectetur repellendus similique! Id voluptatibus, adipisci, vitae dicta molestiae obcaecati doloremque consectetur odio, eos architecto sint libero deleniti asperiores veniam beatae nisi tempora dolores? Ea maxime, aliquid debitis commodi iusto assumenda, quo animi, accusantium voluptate delectus in. Blanditiis repudiandae necessitatibus enim nemo soluta, aliquam a vel numquam voluptatum ab temporibus libero, ipsum sit voluptatibus expedita nobis modi facere? Tenetur exercitationem quo numquam molestias officiis ratione, vitae possimus. Eius, voluptates totam sed labore ut distinctio laudantium quod eos odio. Animi labore dicta corporis inventore praesentium, minima harum ducimus pariatur? Aperiam minus perferendis culpa deleniti esse magnam pariatur. Nostrum aliquid numquam, tempore eveniet sapiente nihil fugiat ipsum sunt iste totam excepturi deserunt dolorum obcaecati officiis fuga tenetur quidem molestiae eum quo quaerat quam accusamus culpa. Possimus mollitia corrupti et earum quis at id quo assumenda facere, tempora debitis ipsam consequuntur nisi! Mollitia iusto at autem, impedit non earum sed odit incidunt laborum eligendi dolor. Nihil sint fugit ut magni perferendis enim! Sit aperiam error repellat autem exercitationem, beatae rem ea ratione iusto tempore aspernatur iste officiis qui eos quidem sapiente esse. Reprehenderit, hic. Est omnis minus dolorum maxime, architecto repellendus delectus mollitia aliquam explicabo culpa modi autem numquam suscipit aliquid minima labore tempore cum facere magnam adipisci enim laboriosam reiciendis eos? Deleniti magni praesentium nihil debitis, sit aperiam vero veniam ratione iure molestias aliquid iste ducimus vel repellat eum quae vitae? Accusantium sit, sed vel qui, cum repellat error, a facilis adipisci eum non! Consectetur debitis ratione quaerat iste, animi optio ipsa doloribus iure nisi velit magnam inventore corporis odio molestiae veniam quam consequuntur possimus reprehenderit? Harum vel itaque deserunt nam tenetur, alias explicabo velit aliquid aliquam, ut impedit nobis corporis possimus similique. Hic pariatur cupiditate perferendis voluptates sed officiis dolorum vero eum laboriosam esse quam nemo praesentium repellat libero perspiciatis doloremque magni, neque dolorem vel error culpa recusandae eveniet tempore quas? Laborum eaque eum, alias quaerat quae sapiente sit facere iure inventore voluptatibus numquam explicabo quas vel nihil dolores porro ad cupiditate? Quod ex in voluptatem, vero et repellendus non nisi nam vitae quasi itaque magnam aspernatur id atque eaque? Quisquam quidem ipsa architecto, iusto officiis vel quo dignissimos perferendis cumque! Nulla sequi sed quo reiciendis ipsam eligendi, blanditiis cum, suscipit perferendis minima doloremque perspiciatis quibusdam nostrum qui unde ducimus quisquam veritatis aliquid culpa eos recusandae aspernatur voluptas? Consequatur ratione blanditiis eveniet aspernatur eius! Impedit deleniti excepturi laboriosam ipsum minus? Dicta, veritatis at quo repellendus illo consectetur autem recusandae. Atque cupiditate voluptatibus, ipsum quod dolores vitae nobis ex eius aspernatur sequi! Ex, animi aliquid dolor laudantium, iusto corrupti eligendi laborum odit omnis nulla autem ut necessitatibus qui, minus et. Excepturi illo tempora quam earum explicabo officiis soluta molestiae sit quas ea incidunt, ex est recusandae aliquid minus corporis deserunt autem impedit! Voluptate enim provident ea odit nemo doloremque sequi est sapiente consequatur! Tempora alias illum iure inventore, porro error deleniti modi omnis autem repellat expedita recusandae. Velit similique explicabo ratione hic ipsa quod libero recusandae quis ut quidem, eligendi omnis ex saepe in illum. Doloremque maxime delectus veritatis at, aspernatur iusto inventore accusamus assumenda beatae veniam, earum possimus illum nostrum minima molestiae, atque cumque ullam soluta nisi iste molestias eos optio consectetur qui? Ad eius deserunt error ab aperiam cumque dolorum voluptatum dolores, consequatur excepturi repellat molestiae. Commodi earum tempore aliquam. Nisi, voluptatem tempora molestiae magnam laudantium ex laborum placeat. Fuga repudiandae aut ut nisi exercitationem enim alias atque libero delectus aliquid natus, voluptatum at sunt earum? Aliquam laborum aliquid recusandae at expedita illum consectetur voluptatum, quisquam animi eveniet facilis enim ex! Ullam doloribus officiis soluta suscipit culpa expedita, quidem ipsam temporibus nisi cumque incidunt et porro qui ipsa provident ratione iure! Minus tempore veniam quos ut, similique libero. Quaerat officia, rem exercitationem officiis animi modi autem nihil sint libero doloribus sapiente ut iure vitae sequi quae et cum pariatur, ratione magnam molestiae aut! Consequuntur ratione quam quidem maxime, laudantium iure laboriosam alias doloremque earum odio qui deserunt aut nihil unde nam reiciendis itaque beatae neque ipsam esse in officiis. Natus accusantium eius incidunt velit, cumque soluta tempora ipsam. Architecto consequatur tenetur temporibus eum, molestias facilis quaerat pariatur, dignissimos natus voluptatem soluta? Expedita, id perferendis eaque accusantium ipsum veritatis maxime ut? Dignissimos sequi eligendi nulla. Rem, culpa. Inventore laudantium sint eius magnam iure dicta adipisci, repellendus delectus, magni deleniti, velit ipsam molestiae? Maiores minus dolor accusantium neque dolorum reiciendis quis beatae, eveniet distinctio quaerat eum cum ab exercitationem iusto officiis labore assumenda quam expedita similique. Perferendis dignissimos ipsum amet hic. Aliquam hic natus sequi eius expedita nisi corporis ratione pariatur, odit voluptatum fugiat quis illum odio nulla! Facere provident rerum officiis, corrupti, ab nulla veritatis temporibus sit enim consequuntur omnis minima, deserunt quae aliquam earum cum fugit? Deleniti ex dolorum sit eos? Ratione et fugiat consequuntur, praesentium nihil ipsum totam aspernatur porro quis officiis. Deleniti voluptatibus, a repellat esse sit illo sed ut veritatis eius magnam earum consequatur labore suscipit optio praesentium eveniet, fuga unde quaerat repudiandae officia? At vero repudiandae consequatur dolor deleniti molestiae eaque recusandae odio et voluptas esse facilis nesciunt officia eos tempora explicabo qui, similique dolorem doloribus accusamus, consequuntur obcaecati inventore quam odit. Error maiores minima quisquam repudiandae animi assumenda repellat sint totam consequatur. Cumque placeat aspernatur unde quasi voluptatibus? Accusantium, pariatur, deserunt quas aut cupiditate eaque beatae temporibus ullam, ducimus corrupti voluptas autem corporis possimus. Dolorem cumque deleniti, dolore repudiandae soluta exercitationem tempora. Iste labore aspernatur tempora totam sapiente qui nihil, rem molestias eaque deleniti possimus eos saepe quam veritatis, cum consequuntur earum dolores sit voluptatibus, temporibus culpa? Reiciendis numquam doloremque expedita nisi sapiente unde laborum reprehenderit temporibus suscipit illo, exercitationem quibusdam doloribus nobis odit minima corporis eligendi dolorum rem perspiciatis dolore veniam. Nostrum ad commodi assumenda magnam consequatur, facilis iusto incidunt, atque deleniti quas sunt vitae in officiis doloremque. Sapiente, veritatis perferendis nostrum temporibus voluptate ex maiores maxime. Labore minus deserunt, dicta tenetur similique a omnis atque modi in, alias, aut ducimus dolore sunt sapiente voluptatibus quas enim delectus blanditiis. Veniam perspiciatis sint, fugiat provident non nemo nostrum ratione, repudiandae laudantium maiores officia itaque explicabo optio odio totam qui repellendus, unde dolorem ut illum accusamus labore! Deleniti fuga sapiente eveniet veritatis quisquam, excepturi iusto laboriosam exercitationem!</p>
+
+    <footer class="card-footer my-4">
+      <small>Author: Romeo Bulalacao Jr.</small>
+  </footer>
+    </div> <!-- End of Main container -->
+  
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+<!-- Modal -->
+<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example1Label">Scrollbar custom</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="contentt">
+            <div class="row">
+                <div class="col"><code>
+                    &lt;style&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-success">
+                    /* width */
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    ::-webkit-scrollbar <span class="text-warning">{</span>
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    width: 2px;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    }
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-success">
+                    /* Track */
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    ::-webkit-scrollbar-track <span class="text-warning">{</span>
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    background: #f1f1f1; 
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                }
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-success">
+                    /* Handle */
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    ::-webkit-scrollbar-thumb <span class="text-warning">{</span>
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    background: #888; 
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                }
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-success">
+                    /* Handle on hover */
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    ::-webkit-scrollbar-thumb:hover <span class="text-warning">{</span>
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    background: #555; 
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                }
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/style&gt;
+                </code></div>
+            </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- end of Modal -->
+
+  <script src="js/myscript.js"></script>
+    <script src="vendor/popper.js/dist/popper.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
