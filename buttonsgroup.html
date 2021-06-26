@@ -113,7 +113,7 @@
     <!-- Heading Container -->
     <div class="container text-center">
       <h1 class="display-4 mt-4 pt-5">Buttons Group
-          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+          <a href="https://getbootstrap.com/docs/5.0/components/button-group/" target="_blank" class="text-dark">
               <span class="h1" title="See offical documentation">
                   <i class="fa fa-question-circle" aria-hidden="true"></i>
               </span>
@@ -148,7 +148,7 @@
       <!-- ############ START HERE ############ -->
       <div id="main-container" class="container">
 
-        <!-- ***** Container ***** -->
+        <!-- ***** Buttons Group ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
             <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Buttons Group</a></h2>
             <code class="d-inline-block mb-1 aw-code">.btn-group</code>
@@ -156,12 +156,31 @@
 
     <!-- # Code Example # -->
 
-    <!-- TODO: example 1 - Container -->
+    <!-- TODO: example 1 -->
     <div class="btn-group" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-primary">Left</button>
         <button type="button" class="btn btn-primary">Middle</button>
         <button type="button" class="btn btn-primary">Right</button>
       </div>
+
+       <!-- ***** Buttons Group ***** -->
+    <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+      <h2 class="coo"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasBottom">
+        Buttons Group
+        </a></h2>
+      <!-- <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example2">Buttons Group</a></h2> -->
+      <code class="d-inline-block mb-1 aw-code">.btn-group</code>
+    </div>
+
+    <!-- # Code Example # -->
+
+    <!-- TODO: example 2  -->
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <a href="tel:+1234567" class="btn btn-info"><i class="fa fa-phone"></i> Call</a>
+      <a href="skype:romeo08099?call" class="btn btn-primary"><i class="fa fa-skype"></i> Skype</a>
+      <a href="mailto:meteorites86@gmail.com" class="btn btn-success"><i class="fa fa-envelope-o"></i> Email</a>
+    </div>
+
   
     <footer class="card-footer my-4">
       <small>Author: Romeo Bulalacao Jr.</small>
@@ -172,82 +191,151 @@
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
       <i class="fa fa-arrow-up"></i>
     </button>
-<!-- Modal -->
-<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="example1Label">Container</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div id="contentt">
-            <div class="row">
-                <div class="col"><code>
-                    &lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
-                </code></div>
+    <!-- Modal -->
+    <div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example1Label">Container</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="contentt">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;button type="button" class="btn btn-primary"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        Left
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;button type="button" class="btn btn-primary"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        Middle
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;button type="button" class="btn btn-primary"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        Right
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-dark">
-                    &lt;button type="button" class="btn btn-primary"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-muted">
-                    Left
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-dark">
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-dark">
-                    &lt;button type="button" class="btn btn-primary"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-muted">
-                    Middle
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-dark">
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-dark">
-                    &lt;button type="button" class="btn btn-primary"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-muted">
-                    Right
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-dark">
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/div&gt;
-                </code></div>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+          </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+    </div>
+    <!-- end of Modal -->
+
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">Buttons Group</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="contentt3">
+      <div class="row">
+        <div class="col"><code>
+          &lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-1"><code class="text-dark">
+          &lt;a href="tel:+1234567" class="btn btn-info"&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-2"><code class="text-muted">
+            Call
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-1"><code class="text-dark">
+          &lt;/a&gt;
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-1"><code class="text-dark">
+          &lt;a href="skype:romeo08099?call" class="btn btn-primary"&gt;&lt;i class="fa fa-skype"&gt;&lt;/i&gt;
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-2"><code class="text-muted">
+            Skype
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-1"><code class="text-dark">
+          &lt;/a&gt;
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-1"><code class="text-dark">
+          &lt;a href="mailto:meteorites86@gmail.com" class="btn btn-success"&gt;&lt;i class="fa fa-envelope-o"&gt;&lt;/i&gt;
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-2"><code class="text-muted">
+            Email
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col offset-1"><code class="text-dark">
+          &lt;/a&gt;
+        </code></div>
+      </div>
+      <div class="row">
+        <div class="col"><code>
+          &lt;/div&gt;
+        </code></div>
       </div>
     </div>
+    <button type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
   </div>
 </div>
-    <!-- end of Modal -->
+
 
   <script src="js/myscript.js"></script>
     <script src="vendor/popper.js/dist/popper.min.js"></script>
