@@ -10,429 +10,573 @@
     <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
      <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light" href="/index.html"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Grid
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li class="dropdown-item text-muted" aria-disabled="true">Grid and Flexbox</li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="container.html">Containers</a></li>
-                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Utilities
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li class="dropdown-item text-muted" aria-disabled="true">Utilities</li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
-                <li><a class="dropdown-item" href="text.html">Text</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="https://comet-me.github.io/rom/"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grid
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted">Grid and Flexbox</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilities
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Utilities</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                  <li><a class="dropdown-item" href="text.html">Text</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compontents
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Content & Components</li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  JavaScript
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">JavaScript</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
+                  <li><a class="dropdown-item" href="modal.html">Modal</a></li>
+                  <li><a class="dropdown-item" href="accordion.html">Collapse</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Template
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Template</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="template1.html">Template Using CDN</a></li>
+                  <li><a class="dropdown-item" href="template2.html">Template 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     <!-- Heading Container -->
+     <div class="container text-center">
+        <h1 class="display-4 mt-4 pt-5">Template
+            <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+                <span class="h1" title="See offical documentation">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </span>
+            </a>
+        </h1>
+        <div class="d-sm-none">
+            <h1>XS</h1>
+            <h5>Portrait Phones</h5>
+            <h6>&#60;576px</h6>
+        </div>                
+        <div class="d-none d-sm-block d-md-none">
+            <h1>SM</h1>
+            <h5>Landscape Phones</h5>
+            <h6>&ge;576px to &#60;768px</h6>
+        </div>
+        <div class="d-none d-md-block d-lg-none">
+            <h1>MD</h1>
+            <h5>Tablets</h5>
+            <h6>&ge;768px to &#60;992px</h6>
+        </div>
+        <div class="d-none d-lg-block d-xl-none">
+            <h1>LG</h1>
+            <h5>Laptops</h5>
+            <h6>&ge;992px to &#60;1200px</h6>
+        </div>
+        <div class="d-none d-xl-block">
+            <h1>XL</h1>
+            <h5>Desktops</h5>
+            <h6>&ge;1200px</h6>
         </div>
       </div>
-    </nav>
-<br>
-   <div id="main-container" class="container pt-5 mt-5">
-    <div id="contentt">
-        <div class="row">
-            <div class="col"><code>
-                &lt;!doctype html&gt;
-            </code></div>
+   <div id="main-container" class="container">
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Template Using CDN [full code]
+        </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <div id="contentt" class="container w-50">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;!doctype html&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;html lang="en"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col m-lg-3"><code class="text-warning">
+                        &lt;head&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;!-- Required meta tags --&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;meta charset="utf-8"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;title&gt;Bootstrap v5&lt;/title&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;!-- Bootstrap CSS --&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;link rel="stylesheet" href="css/styles.css"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col m-lg-3"><code class="text-warning">
+                        &lt;/head&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col m-lg-3"><code class="text-warning">
+                        &lt;body&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        &lt;div class="container-fluid"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-success">
+                        &lt;a class="navbar-brand text-light" href="/index.html"&gt;&lt;img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"&gt;&lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-success">
+                        &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code>
+                        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-success">
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-success">
+                        &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code>
+                        &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;li class="nav-item"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;a class="nav-link" aria-current="page" href="index.html"&gt;Home&lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;li class="nav-item dropdown"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        Grid
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li class="dropdown-item text-muted" aria-disabled="true"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-8"><code class="text-success">
+                        Grid and Flexbox
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li&gt;&lt;a class="dropdown-item" href="container.html"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-8"><code class="text-success">
+                        Containers
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;/a&gt;&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li&gt;&lt;a class="dropdown-item" href="grid.html"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-8"><code class="text-dark">
+                        Grid
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;/a&gt;&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;/ul&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;li class="nav-item dropdown"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        Utilities
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li class="dropdown-item text-muted" aria-disabled="true"&gt;Utilities&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li&gt;&lt;a class="dropdown-item" href="typography.html"&gt;Typography&lt;/a&gt;&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li&gt;&lt;a class="dropdown-item" href="text.html"&gt;Text&lt;/a&gt;&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-7"><code class="text-muted">
+                        &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-dark">
+                        &lt;/ul&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code>
+                        &lt;/ul&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code>
+                        &lt;form class="d-flex"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code class="text-warning">
+                        &lt;button class="btn btn-outline-success" type="submit"&gt;Search&lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code>
+                        &lt;/form&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-success">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-muted">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;/nav&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;div id="main-container" class="container"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2">
+                        &lt;!-- content here --&gt;
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col m-lg-3"><code class="text-warning">
+                        &lt;/body&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col m-lg-3"><code>
+                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/html&gt;
+                    </code></div>
+                </div>
+            </div>
+            <button id="copier" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
         </div>
-        <div class="row">
-            <div class="col"><code>
-                &lt;html lang="en"&gt;
-            </code></div>
         </div>
-        <div class="row">
-            <div class="col offset-1"><code class="text-warning">
-                &lt;head&gt;
-            </code></div>
         </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;!-- Required meta tags --&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;meta charset="utf-8"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;title&gt;Bootstrap v5&lt;/title&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;!-- Bootstrap CSS --&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;link rel="stylesheet" href="css/styles.css"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-1"><code class="text-warning">
-                &lt;/head&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-1"><code class="text-warning">
-                &lt;body&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-3"><code class="text-muted">
-                &lt;div class="container-fluid"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-4"><code class="text-success">
-                &lt;a class="navbar-brand text-light" href="/index.html"&gt;&lt;img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"&gt;&lt;/a&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-4"><code class="text-success">
-                &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-5"><code>
-                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-4"><code class="text-success">
-                &lt;/button&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-4"><code class="text-success">
-                &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-5"><code>
-                &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;li class="nav-item"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;a class="nav-link" aria-current="page" href="index.html"&gt;Home&lt;/a&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;li class="nav-item dropdown"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                Grid
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;/a&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li class="dropdown-item text-muted" aria-disabled="true"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-9"><code class="text-success">
-                Grid and Flexbox
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li&gt;&lt;a class="dropdown-item" href="container.html"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-9"><code class="text-success">
-                Containers
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;/a&gt;&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li&gt;&lt;a class="dropdown-item" href="grid.html"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-9"><code class="text-dark">
-                Grid
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-warning">
-                &lt;/a&gt;&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;/ul&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;li class="nav-item dropdown"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                Utilities
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;/a&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;ul class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li class="dropdown-item text-muted" aria-disabled="true"&gt;Utilities&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li&gt;&lt;a class="dropdown-item" href="typography.html"&gt;Typography&lt;/a&gt;&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li&gt;&lt;a class="dropdown-item" href="text.html"&gt;Text&lt;/a&gt;&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-8"><code class="text-muted">
-                &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-7"><code class="text-dark">
-                &lt;/ul&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;/li&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-5"><code>
-                &lt;/ul&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-5"><code>
-                &lt;form class="d-flex"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-6"><code class="text-warning">
-                &lt;button class="btn btn-outline-success" type="submit"&gt;Search&lt;/button&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-5"><code>
-                &lt;/form&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-4"><code class="text-success">
-                &lt;/div&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-3"><code class="text-muted">
-                &lt;/div&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;/nav&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;div id="main-container" class="container"&gt;
-            </code></div>
-        </div>
-        <div class="row">
-            <div class="col offset-3">
-                &lt;!-- content here --&gt;
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Template using local bootstrap
+        </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <h6>When using this method you should:</h6>
+            <ol>
+                <li>install bootstrap using NPM</li>
+                <li>copy bootstrap folder inside node_modules</li>
+                <li>create a folder name it as vendor then paste the bootstrap folder there</li>
+                <li>see sample output below</li>
+            </ol>
+            <div class="row">
+                <div class="col"><code>
+                    <h5>head section</h5>
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;link ref="vendor/bootstrap/dist/css/bootstrap.min.css"&gt;
+                </code></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col"><code>
+                    <h5>before the closing body tags</h5>
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;script src="vendor/bootstrap/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col mt-3">
+                   <span class="text-primary"><i class="bi bi-info-circle-fill"></i></span> Github will not recognized the file inside <strong>node_modules</strong> folder.
+                </div>
             </div>
         </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Template Using CDN
+        </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <h5>Head Section or Bootstrap section</h5>
+            <div id="contentt3">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+                    </code></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col"><code>
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"&gt;
+                    </code></div>
+                </div>
+            </div>
+            <button id="copier3" type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
+            <h5 class="mt-4">after closing body tags</h5>
+            <div id="contentt4">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;script&gt; src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    </code></div>
+                </div>
 
-        <div class="row">
-            <div class="col offset-2"><code class="text-dark">
-                &lt;/div&gt;
-            </code></div>
+            </div>
+            <button id="copier4" type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
         </div>
-        <div class="row">
-            <div class="col offset-1"><code class="text-warning">
-                &lt;/body&gt;
-            </code></div>
         </div>
-        <div class="row">
-            <div class="col offset-1"><code>
-                &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
-            </code></div>
         </div>
-        <div class="row">
-            <div class="col"><code>
-                &lt;/html&gt;
-            </code></div>
         </div>
-    </div>
+        </div>
     <br>
-    <button id="copier" type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
-   </div>
+    
+   </div> <!-- End of Main -->
    <br>
    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
     <i class="fa fa-arrow-up"></i>
     </button>
-   <script>
-       //Get the button
-let mybutton = document.getElementById("btn-back-to-top");
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-scrollFunction ();
-};
-function scrollFunction() {
-if (
-document.body.scrollTop > 20 ||
-document.documentElement.scrollTop > 20
-) {
-mybutton.style.display = "block";
-} else {
-mybutton.style.display = "none";
-}
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
-function backToTop() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
-    function CopyToClipboard(contentt)
-    {
-    var r = document.createRange();
-    r.selectNode(document.getElementById(contentt));
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(r);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
-    document.getElementById('copier').innerHTML = "copied";
-    }
-    </script>
-    
+   <script src="js/myscript.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

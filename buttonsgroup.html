@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-social/bootstrap-social.css">
@@ -70,18 +68,18 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Compontents
               </a>
               <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li class="dropdown-item text-muted" aria-disabled="true">Content & Components</li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+                <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 JavaScript
               </a>
               <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -99,7 +97,7 @@
                 <li class="dropdown-item text-muted" aria-disabled="true">Template</li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="template1.html">Template Using CDN</a></li>
-                <li><a class="dropdown-item" href="template2.html">Template using local bootstrap</a></li>
+                <li><a class="dropdown-item" href="template2.html">Template2</a></li>
               </ul>
             </li>
           </ul>
@@ -112,44 +110,148 @@
     </nav>
     <!-- Heading Container -->
     <div class="container text-center">
-        <h1 class="display-4 mt-4 pt-5">Modal
-            <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
-                <span class="h1" title="See offical documentation">
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </span>
-            </a>
-        </h1>
-        <div class="d-sm-none">
-            <h1>XS</h1>
-            <h5>Portrait Phones</h5>
-            <h6>&#60;576px</h6>
-        </div>                
-        <div class="d-none d-sm-block d-md-none">
-            <h1>SM</h1>
-            <h5>Landscape Phones</h5>
-            <h6>&ge;576px to &#60;768px</h6>
+      <h1 class="display-4 mt-4 pt-5">Buttons Group
+          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+              <span class="h1" title="See offical documentation">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+          </a>
+      </h1>
+      <div class="d-sm-none">
+          <h1>XS</h1>
+          <h5>Portrait Phones</h5>
+          <h6>&#60;576px</h6>
+      </div>                
+      <div class="d-none d-sm-block d-md-none">
+          <h1>SM</h1>
+          <h5>Landscape Phones</h5>
+          <h6>&ge;576px to &#60;768px</h6>
+      </div>
+      <div class="d-none d-md-block d-lg-none">
+          <h1>MD</h1>
+          <h5>Tablets</h5>
+          <h6>&ge;768px to &#60;992px</h6>
+      </div>
+      <div class="d-none d-lg-block d-xl-none">
+          <h1>LG</h1>
+          <h5>Laptops</h5>
+          <h6>&ge;992px to &#60;1200px</h6>
+      </div>
+      <div class="d-none d-xl-block">
+          <h1>XL</h1>
+          <h5>Desktops</h5>
+          <h6>&ge;1200px</h6>
+      </div>
+    </div>
+      <!-- ############ START HERE ############ -->
+      <div id="main-container" class="container">
+
+        <!-- ***** Container ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Buttons Group</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.btn-group</code>
         </div>
-        <div class="d-none d-md-block d-lg-none">
-            <h1>MD</h1>
-            <h5>Tablets</h5>
-            <h6>&ge;768px to &#60;992px</h6>
-        </div>
-        <div class="d-none d-lg-block d-xl-none">
-            <h1>LG</h1>
-            <h5>Laptops</h5>
-            <h6>&ge;992px to &#60;1200px</h6>
-        </div>
-        <div class="d-none d-xl-block">
-            <h1>XL</h1>
-            <h5>Desktops</h5>
-            <h6>&ge;1200px</h6>
+
+    <!-- # Code Example # -->
+
+    <!-- TODO: example 1 - Container -->
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-primary">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+      </div>
+  
+
+
+
+    <footer class="card-footer my-4">
+      <small>Author: Romeo Bulalacao Jr.</small>
+  </footer>
+    </div> <!-- End of Main container -->
+  
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+<!-- Modal -->
+<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example1Label">Container</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="contentt">
+            <div class="row">
+                <div class="col"><code>
+                    &lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    &lt;button type="button" class="btn btn-primary"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-muted">
+                    Left
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    &lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    &lt;button type="button" class="btn btn-primary"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-muted">
+                    Middle
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    &lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    &lt;button type="button" class="btn btn-primary"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-muted">
+                    Right
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-dark">
+                    &lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/div&gt;
+                </code></div>
+            </div>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- end of Modal -->
 
-    <script src="js/myscript.js"></script>
+  <script src="js/myscript.js"></script>
     <script src="vendor/popper.js/dist/popper.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script> -->
   </body>
 </html>
-

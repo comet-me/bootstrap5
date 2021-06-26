@@ -28,6 +28,7 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('copier').innerHTML = "Copied";
       }
     function CopyToClipboard1(contentt1)
       {
@@ -55,6 +56,7 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('copier3').innerHTML = "Copied";
       }
     function CopyToClipboard4(contentt4)
       {
@@ -64,6 +66,7 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('copier4').innerHTML = "Copied";
       }
     function CopyToClipboard5(contentt5)
       {
