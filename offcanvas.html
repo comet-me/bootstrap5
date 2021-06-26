@@ -147,7 +147,7 @@
       <!-- ############ START HERE ############ -->
       <div id="main-container" class="container">
 
-        <!-- ***** Container ***** -->
+        <!-- ***** Offcanvas ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
             <!-- <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Offcanvas</a></h2> -->
             <h2 class="coo"><a class="text-light text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample2" role="button" aria-controls="offcanvasExample2">Offcanvas</a></h2>
@@ -187,7 +187,51 @@
               </div>
             </div>
           </div>
+          <hr>
+          <div class="knowledge bg-warning rounded-top p-2">
+
+              <h5 class="mt-5"><span class="text-primary"><i class="bi bi-info-square-fill"></i></span> Note</h5>
+              <p>Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the .show class on an element with the <span class="text-danger">.offcanvas</span> class.</p>
+              <ul>
+                  <li>
+                      <code class="text-dark">
+                          <span class="text-danger">.offcanvas</span> hides content (default)
+                      </code>
+                  </li>
+                  <li>
+                      <code class="text-dark">
+                        <span class="text-danger">.offcanvas.show</span></code> shows content <br>
+                        You can use a link with the href attribute, or a button with the data-bs-target attribute. In both cases, the data-bs-toggle="offcanvas" is required.</p>
+                  </li>
+              </ul>
+          </div>
+
     </div>
+
+
+
+     <!-- ***** Offcanvas ***** -->
+     <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+        <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example2">Offcanvas [bottom]</a></h2>
+        <code class="d-inline-block mb-1 aw-code">.sometext</code>
+    </div>
+
+<!-- # Code Example # -->
+
+<!-- TODO: example 2 -->
+<div class="container">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+</div>
   
 <!-- my offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label">
@@ -409,221 +453,312 @@
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
       <i class="fa fa-arrow-up"></i>
     </button>
-<!-- Modal -->
-<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="example1Label">Container</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div id="contentt">
-            <div class="row">
-                <div class="col"><code>
-                    &lt;a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-warning">
-                    Link with href
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/a&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-warning">
-                Button with data-bs-target
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-warning">
-                    &lt;div class="offcanvas-header"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-dark">
-                    &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Offcanvas&lt;/h5&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-dark">
-                    &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-warning">
-                    &lt;/div&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-warning">
-                    &lt;div class="offcanvas-body"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-dark">
-                    &lt;div&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-3"><code class="text-muted">
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-dark">
-                    &lt;/div&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-dark">
-                    &lt;div class="dropdown mt-3"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-3"><code class="text-muted">
-                    &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4"><code class="text-success">
-                    Dropdown button
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-3"><code class="text-muted">
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-3"><code class="text-muted">
-                    &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4"><code class="text-success">
-                    &lt;li&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5"><code>
-                    &lt;a class="dropdown-item" href="#"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-6"><code class="text-warning">
-                    Action
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5"><code>
-                    &lt;/a&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4"><code class="text-success">
-                    &lt;/li&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4"><code class="text-success">
-                    &lt;li&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5"><code>
-                    &lt;a class="dropdown-item" href="#"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-6"><code class="text-warning">
-                    Another action
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5"><code>
-                    &lt;/a&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4"><code class="text-success">
-                    &lt;/li&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4"><code class="text-success">
-                    &lt;li&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5"><code>
-                    &lt;a class="dropdown-item" href="#"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-6"><code class="text-warning">
-                    Something else here
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5"><code>
-                    &lt;/a&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4"><code class="text-success">
-                    &lt;/li&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-3"><code class="text-muted">
-                    &lt;/ul&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2"><code class="text-dark">
-                    &lt;/div&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-warning">
-                    &lt;/div&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/div&gt;
-                </code></div>
+    <!-- Modal -->
+    <div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="example1Label">Container</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="contentt">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        Link with href
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                    Button with data-bs-target
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="offcanvas-header"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Offcanvas&lt;/h5&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="offcanvas-body"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="dropdown mt-3"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        Dropdown button
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        &lt;li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code>
+                        &lt;a class="dropdown-item" href="#"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-warning">
+                        Action
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code>
+                        &lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        &lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        &lt;li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code>
+                        &lt;a class="dropdown-item" href="#"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-warning">
+                        Another action
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code>
+                        &lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        &lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        &lt;li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code>
+                        &lt;a class="dropdown-item" href="#"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-6"><code class="text-warning">
+                        Something else here
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-5"><code>
+                        &lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        &lt;/li&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/ul&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
             </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
-      </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [offcanvas bottom] -->
+    <div class="modal fade" id="example2" tabindex="-1" aria-labelledby="example2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="example2Label">Offcanvas Bottom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="contentt2">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        Toggle bottom offcanvas
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="offcanvas-header"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;h5 class="offcanvas-title" id="offcanvasBottomLabel"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        <h5>Offcanvas bottom</h5>
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/h5&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="offcanvas-body small"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        ...
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+        </div>
+        </div>
+    </div>
+    </div>
     <!-- end of Modal -->
 
   <script src="js/myscript.js"></script>
