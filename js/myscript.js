@@ -38,6 +38,7 @@
         window.getSelection().addRange(r);
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+        document.getElementById('copier1').innerHTML = "Copied";
       }
     function CopyToClipboard2(contentt2)
       {

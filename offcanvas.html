@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap v5</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="https://comet-me.github.io/rom/"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Grid
+              </a>
+              <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted">Grid and Flexbox</li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Utilities
+              </a>
+              <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted" aria-disabled="true">Utilities</li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                <li><a class="dropdown-item" href="text.html">Text</a></li>
+                <li><a class="dropdown-item" href="interactions.html">Interactions</a></li>
+                <li><a class="dropdown-item" href="shadow.html">Shadow</a></li>
+                <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Compontents
+              </a>
+              <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted" aria-disabled="true">Content & Components</li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+                <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
+                <li><a class="dropdown-item" href="offcanvas.html">Offcanvas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                JavaScript
+              </a>
+              <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted" aria-disabled="true">JavaScript</li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
+                <li><a class="dropdown-item" href="modal.html">Modal</a></li>
+                <li><a class="dropdown-item" href="accordion.html">Collapse</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Template
+              </a>
+              <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item text-muted" aria-disabled="true">Template</li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="template1.html">Template Using CDN</a></li>
+                <li><a class="dropdown-item" href="template2.html">Template2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Heading Container -->
+    <div class="container text-center">
+      <h1 class="display-4 mt-4 pt-5">Text
+          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+              <span class="h1" title="See offical documentation">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+          </a>
+      </h1>
+      <div class="d-sm-none">
+          <h1>XS</h1>
+          <h5>Portrait Phones</h5>
+          <h6>&#60;576px</h6>
+      </div>                
+      <div class="d-none d-sm-block d-md-none">
+          <h1>SM</h1>
+          <h5>Landscape Phones</h5>
+          <h6>&ge;576px to &#60;768px</h6>
+      </div>
+      <div class="d-none d-md-block d-lg-none">
+          <h1>MD</h1>
+          <h5>Tablets</h5>
+          <h6>&ge;768px to &#60;992px</h6>
+      </div>
+      <div class="d-none d-lg-block d-xl-none">
+          <h1>LG</h1>
+          <h5>Laptops</h5>
+          <h6>&ge;992px to &#60;1200px</h6>
+      </div>
+      <div class="d-none d-xl-block">
+          <h1>XL</h1>
+          <h5>Desktops</h5>
+          <h6>&ge;1200px</h6>
+      </div>
+    </div>
+      <!-- ############ START HERE ############ -->
+      <div id="main-container" class="container">
+
+        <!-- ***** Container ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <!-- <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Offcanvas</a></h2> -->
+            <h2 class="coo"><a class="text-light text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample2" role="button" aria-controls="offcanvasExample2">Offcanvas</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.sometext</code>
+        </div>
+
+    <!-- # Code Example # -->
+
+    <!-- TODO: example 1 - Container -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos doloremque, deserunt quia reprehenderit rerum veniam rem deleniti ea? Possimus natus eaque magnam illum reprehenderit, sequi et quisquam hic quasi est vel accusamus ab quos, quis libero aspernatur? Aliquam, optio officia recusandae eos dolorum enim praesentium quo suscipit aspernatur debitis fugit facere dignissimos odio autem nobis, corrupti nostrum animi, quis eum quam voluptate omnis qui rerum. Commodi nemo, totam sequi itaque delectus ullam nisi sint debitis sed rem eum, rerum dolore deleniti voluptas. Maxime praesentium minima quibusdam hic, molestiae dignissimos aut debitis, omnis a, repellendus voluptatum unde ex quod. Corrupti sunt ratione asperiores placeat est distinctio quisquam iure vero doloribus qui optio sint, sapiente aperiam natus magnam eum molestiae perspiciatis id mollitia harum delectus recusandae in. Delectus aspernatur perferendis provident aliquid quidem neque? Earum rerum dignissimos beatae cupiditate! Aliquid quam quod adipisci laboriosam, vitae consequatur ea ab! Aliquid deleniti possimus quod minus. Corporis nulla reiciendis mollitia minus. Possimus nostrum expedita nam nisi quas qui cum nihil tenetur voluptate laboriosam quos id suscipit quibusdam, obcaecati assumenda beatae ipsam nemo fugiat mollitia fugit vel, unde perspiciatis saepe deserunt. Eos deleniti dolores odit molestiae animi, aspernatur libero deserunt ab totam iste fugiat vero nesciunt. Magni odio temporibus veritatis, numquam dolorem itaque quod in explicabo voluptas doloribus quibusdam nulla reiciendis ipsum deleniti quas dolorum architecto cum, beatae voluptates quisquam veniam harum. Unde cum veritatis saepe tenetur eius molestiae blanditiis neque optio explicabo sequi ipsa placeat non beatae nisi quisquam delectus, cupiditate, perspiciatis sit, ab esse facere molestias culpa? Iste cumque autem, tempora sapiente quidem dignissimos natus est adipisci, quisquam eum dolorem esse, amet omnis itaque ab eveniet! Nam veritatis reprehenderit labore. Excepturi a quos consequuntur deserunt eveniet, consequatur incidunt voluptas accusamus facilis. Sit earum, nemo incidunt inventore maxime debitis temporibus distinctio dignissimos, quas nesciunt fuga consequuntur harum error sint unde labore quo quaerat. Cum tempora adipisci nemo voluptatum quae delectus incidunt consectetur aliquam quo, libero dolore nam rerum natus tempore quia maiores perspiciatis esse, quisquam saepe enim distinctio. Possimus harum dolor quas dicta iure laudantium tenetur itaque ullam esse. Amet laudantium ea sit, excepturi magni in quae repellendus provident exercitationem laboriosam pariatur quas veniam ad aut distinctio dolores ex tenetur corrupti facere molestiae dolorum consequuntur! Corporis quibusdam dolorum pariatur sunt mollitia officiis molestias modi eligendi eius. Quasi minima iste reiciendis deserunt sunt dicta non maiores adipisci laudantium nobis nesciunt, vero iusto expedita eum itaque quas molestiae? Odio consequuntur accusamus ea ipsa non numquam voluptatem molestiae, expedita deleniti quae reprehenderit. Incidunt autem nam voluptas natus, rem a architecto non odit, unde totam nesciunt animi dignissimos dolorum fugit eos molestiae explicabo similique laborum sequi aliquid, porro ad at repellendus. Voluptatibus impedit exercitationem sed quasi dolorum! Nam, voluptatum. Alias possimus id totam illo excepturi voluptatibus facere sint, repudiandae et in. Ducimus ut optio libero explicabo obcaecati? Vitae delectus numquam accusantium repellat nemo quo velit ut nobis voluptas? Ut, unde? Culpa doloribus a harum reprehenderit esse non modi accusantium architecto recusandae. Harum minus eum sapiente odit, quidem vitae?</p>
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Link with href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+  
+<!-- my offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExample2Label">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <div id="contentt1">
+            <div class="row">
+                <div class="col"><code>
+                    &lt;a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    Link with href
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                Button with data-bs-target
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;div class="offcanvas-header"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Offcanvas&lt;/h5&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;div class="offcanvas-body"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;div class="dropdown mt-3"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    Dropdown button
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;a class="dropdown-item" href="#"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-6"><code class="text-warning">
+                    Action
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;/li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;a class="dropdown-item" href="#"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-6"><code class="text-warning">
+                    Another action
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;/li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;a class="dropdown-item" href="#"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-6"><code class="text-warning">
+                    Something else here
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;/li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;/ul&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+        </div>
+        <button id="copier1" type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-primary" data-dismiss="modal">Copy</button>
+      </div>
+    </div>
+</div>
+
+
+    <footer class="card-footer my-4">
+      <small>Author: Romeo Bulalacao Jr.</small>
+  </footer>
+    </div> <!-- End of Main container -->
+  
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+<!-- Modal -->
+<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example1Label">Container</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="contentt">
+            <div class="row">
+                <div class="col"><code>
+                    &lt;a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    Link with href
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                Button with data-bs-target
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;div class="offcanvas-header"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Offcanvas&lt;/h5&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;div class="offcanvas-body"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;div class="dropdown mt-3"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    Dropdown button
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;/button&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;a class="dropdown-item" href="#"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-6"><code class="text-warning">
+                    Action
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;/li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;a class="dropdown-item" href="#"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-6"><code class="text-warning">
+                    Another action
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;/li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;a class="dropdown-item" href="#"&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-6"><code class="text-warning">
+                    Something else here
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5"><code>
+                    &lt;/a&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4"><code class="text-success">
+                    &lt;/li&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3"><code class="text-muted">
+                    &lt;/ul&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2"><code class="text-dark">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+            <div class="row">
+                <div class="col"><code>
+                    &lt;/div&gt;
+                </code></div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- end of Modal -->
+
+  <script src="js/myscript.js"></script>
+    <script src="vendor/popper.js/dist/popper.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
