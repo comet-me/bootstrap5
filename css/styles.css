@@ -1,3 +1,8 @@
+#copier {
+  position: fixed;
+  top: 2%;
+  left: 20%;
+}
 #ggrid {
   /* adding scroll on a dropdown menu */
   height: auto;
