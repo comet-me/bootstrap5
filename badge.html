@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap v5</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="https://comet-me.github.io/rom/"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grid
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted">Grid and Flexbox</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilities
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Utilities</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                  <li><a class="dropdown-item" href="text.html">Text</a></li>
+                  <li><a class="dropdown-item" href="interactions.html">Interactions</a></li>
+                  <li><a class="dropdown-item" href="shadow.html">Shadow</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compontents
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Content & Components</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+                  <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
+                  <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">Offcanvas</a></li>
+                  <li><a class="dropdown-item" href="badge.html">Badge</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  JavaScript
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">JavaScript</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
+                  <li><a class="dropdown-item" href="modal.html">Modal</a></li>
+                  <li><a class="dropdown-item" href="accordion.html">Collapse</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Template
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Template</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="template1.html">Template Using CDN</a></li>
+                  <li><a class="dropdown-item" href="template2.html">Template2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Heading Container -->
+    <div class="container text-center">
+      <h1 class="display-4 mt-4 pt-5">Badge
+          <a href="https://getbootstrap.com/docs/5.0/components/badge/" target="_blank" class="text-dark">
+              <span class="h1" title="See offical documentation">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+          </a>
+      </h1>
+      <div class="d-sm-none">
+          <h1>XS</h1>
+          <h5>Portrait Phones</h5>
+          <h6>&#60;576px</h6>
+      </div>                
+      <div class="d-none d-sm-block d-md-none">
+          <h1>SM</h1>
+          <h5>Landscape Phones</h5>
+          <h6>&ge;576px to &#60;768px</h6>
+      </div>
+      <div class="d-none d-md-block d-lg-none">
+          <h1>MD</h1>
+          <h5>Tablets</h5>
+          <h6>&ge;768px to &#60;992px</h6>
+      </div>
+      <div class="d-none d-lg-block d-xl-none">
+          <h1>LG</h1>
+          <h5>Laptops</h5>
+          <h6>&ge;992px to &#60;1200px</h6>
+      </div>
+      <div class="d-none d-xl-block">
+          <h1>XL</h1>
+          <h5>Desktops</h5>
+          <h6>&ge;1200px</h6>
+      </div>
+    </div>
+      <!-- ############ START HERE ############ -->
+      <div id="main-container" class="container">
+
+        <!-- ***** Badge ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Badge</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.badge</code>
+        </div>
+
+    <!-- # Code Example # -->
+
+    <!-- TODO: example 1 -->
+    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+    <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+  
+ <!-- ***** Badge Notification ***** -->
+ <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+   <h2 class="coo">
+     <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      Badge Notification
+      </a>
+   </h2>
+  <!-- <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example2">Badge Notification</a></h2> -->
+  <code class="d-inline-block mb-1 aw-code">.badge</code>
+</div>
+
+<!-- # Code Example # -->
+
+<!-- TODO: example 2 -->
+<button type="button" class="btn btn-primary">
+  Notifications <span class="badge bg-secondary">4</span>
+</button>
+
+<!-- ***** Badge Position ***** -->
+<div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+  <h2 class="coo">
+    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions1" aria-controls="offcanvasWithBothOptions1">
+     Positioned
+     </a>
+  </h2>
+ <!-- <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example2">Badge Notification</a></h2> -->
+ <code class="d-inline-block mb-1 aw-code">.badge</code>
+</div>
+
+<!-- # Code Example # -->
+
+<!-- TODO: example 2 -->
+<button type="button" class="btn btn-primary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+
+<!-- ***** Badge Generic indicator ***** -->
+<div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+  <h2 class="coo">
+    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2" aria-controls="offcanvasWithBothOptions2">
+     Generic
+     </a>
+  </h2>
+ <code class="d-inline-block mb-1 aw-code">.badge</code>
+</div>
+
+<!-- # Code Example # -->
+
+<!-- TODO: example 2 -->
+<button type="button" class="btn btn-primary position-relative">
+  Profile
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>
+
+
+    <footer class="card-footer my-4">
+      <small>Author: Romeo Bulalacao Jr.</small>
+  </footer>
+    </div> <!-- End of Main container -->
+  
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example1Label">Badge</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="contentt">
+              <div class="row">
+                <div class="col"><code>
+                  &lt;h1&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                  Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;/h1&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;h2&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                  Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;/h2&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;h3&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                  Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;/h3&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;h4&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                  Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;/h4&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;h5&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                  Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;/h5&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;h6&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col offset-1"><code class="text-warning">
+                  Example heading &lt;span class="badge bg-secondary"&gt;New&lt;/span&gt;
+                </code></div>
+              </div>
+              <div class="row">
+                <div class="col"><code>
+                  &lt;/h6&gt;
+                </code></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- offcanvas badge notif -->
+    <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+      Badge Notification
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="contentt1">
+          <div class="row">
+            <div class="col"><code>
+              &lt;button type="button" class="btn btn-primary"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              Notifications &lt;span class="badge bg-secondary"&gt;4&lt;/span&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/button&gt;
+            </code></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- End of badge notification -->
+    <!-- offcanvas badge positioned -->
+    <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions1" aria-labelledby="offcanvasWithBothOptions1Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptions1Label">
+      Positioned
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="contentt2">
+          <div class="row">
+            <div class="col"><code>
+              &lt;button type="button" class="btn btn-primary position-relative"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              Inbox
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              99+
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;span class="visually-hidden"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              unread messages
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/span&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+            &lt;/span&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/button&gt;
+            </code></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- End of badge positioned -->
+    <!-- offcanvas badge generic indicator -->
+    <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptions2Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptions2Label">
+      Generic Indicator
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="contentt3">
+          <div class="row">
+            <div class="col"><code>
+              &lt;button type="button" class="btn btn-primary position-relative"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              Profile
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-dark">
+              &lt;span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-muted">
+              &lt;span class="visually-hidden"&gt;New alerts&lt;/span&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-dark">
+              &lt;/span&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/button&gt;
+            </code></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- End of badge positioned -->
+
+
+  <script src="js/myscript.js"></script>
+    <script src="vendor/popper.js/dist/popper.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

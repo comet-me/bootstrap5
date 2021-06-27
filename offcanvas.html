@@ -190,7 +190,7 @@
           <hr>
           <div class="knowledge bg-warning rounded-top p-2">
 
-              <h5 class="mt-5"><span class="text-primary"><i class="bi bi-info-square-fill"></i></span> Note</h5>
+              <h5 class="mt-3"><span class="text-primary"><i class="bi bi-info-square-fill"></i></span> Note</h5>
               <p>Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the .show class on an element with the <span class="text-danger">.offcanvas</span> class.</p>
               <ul>
                   <li>
@@ -200,20 +200,37 @@
                   </li>
                   <li>
                       <code class="text-dark">
-                        <span class="text-danger">.offcanvas.show</span></code> shows content <br>
+                        <p class="fw-lighter"><span class="text-danger">.offcanvas.show</span></code> shows content <br>
                         You can use a link with the href attribute, or a button with the data-bs-target attribute. In both cases, the data-bs-toggle="offcanvas" is required.</p>
                   </li>
               </ul>
+              <h6 mt-4>Placement</h6>
+              <p class="fw-lighter">
+                  There’s no default placement for offcanvas components, so you must add one of the modifier classes below;
+              </p>
+              <ul>
+                  <li>
+                      <code class="text-danger">.offcanvas-start</code> places offcanvas on the left of the viewport (shown above)
+                  </li>
+                  <li>
+                      <code class="text-danger">.offcanvas-end</code> places offcanvas on the right of the viewport
+                  </li>
+                  <li>
+                      <code class="text-danger">.offcanvas-top</code> places offcanvas on the top of the viewport
+                  </li>
+                  <li>
+                      <code class="text-danger">.offcanvas-bottom</code> places offcanvas on the bottom of the viewport
+                  </li>
+              </ul>
           </div>
-
     </div>
 
 
 
-     <!-- ***** Offcanvas ***** -->
+     <!-- ***** Offcanvas [bottom] ***** -->
      <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
         <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example2">Offcanvas [bottom]</a></h2>
-        <code class="d-inline-block mb-1 aw-code">.sometext</code>
+        <code class="d-inline-block mb-1 aw-code">.offcanvas-bottom</code>
     </div>
 
 <!-- # Code Example # -->
@@ -445,7 +462,7 @@
 <!-- ***** Offcanvas ***** -->
 <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
     <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example3">Offcanvas [top]</a></h2>
-    <code class="d-inline-block mb-1 aw-code">.sometext</code>
+    <code class="d-inline-block mb-1 aw-code">.offcanvas-top</code>
 </div>
 
 <!-- # Code Example # -->
@@ -465,7 +482,8 @@
 <!-- ***** Backdrop ***** -->
 <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
     <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example4">Backdrop</a></h2>
-    <code class="d-inline-block mb-1 aw-code">.sometext</code>
+    <code class="d-inline-block mb-1 aw-code">data-bs-scroll="true"</code> &
+    <code class="d-inline-block mb-1 aw-code">data-bs-backdrop="false"</code>
 </div>
 
 <!-- # Code Example # -->
@@ -502,24 +520,20 @@
     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-
   <div class="offcanvas-body">
     <p>Try scrolling the rest of the page to see this option in action.</p>
   </div>
-
 </div>
-
 
 
     <footer class="card-footer my-4">
       <small>Author: Romeo Bulalacao Jr.</small>
   </footer>
     </div> <!-- End of Main container -->
-  
-
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
       <i class="fa fa-arrow-up"></i>
     </button>
+
     <!-- Modal -->
     <div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
     <div class="modal-dialog">
@@ -763,7 +777,7 @@
                 </div>
                 <div class="row">
                     <div class="col"><code>
-                        &lt;div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel"&gt;
+                        &lt;div class="offcanvas <span class="text-primary">offcanvas-bottom</span>" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel"&gt;
                     </code></div>
                 </div>
                 <div class="row">
@@ -827,10 +841,6 @@
     </div>
     </div>
     <!-- end of Modal -->
-    <!-- A trigger button to activate modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
 
 <!-- Modal [offcanvas top]-->
 <div class="modal fade" id="example3" tabindex="-1" aria-labelledby="example3Label" aria-hidden="true">
@@ -927,11 +937,6 @@
     </div>
 </div>
 
-<!-- A trigger button to activate modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Launch demo modal
-</button>
-
 <!-- Modal [offcanvas backdrop] -->
 <div class="modal fade" id="example4" tabindex="-1" aria-labelledby="example4Label" aria-hidden="true">
     <div class="modal-dialog">
@@ -987,176 +992,178 @@ Launch demo modal
                             &lt;/button&gt;
                         </code></div>
                     </div>
-                    <div class="row">
-                        <div class="col"><code>
-                            &lt;div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="offcanvas-header"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;h5 class="offcanvas-title" id="offcanvasScrollingLabel"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-muted">
-                            <h5>Colored with scrolling</h5>
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;/h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="offcanvas-body"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;p&gt;Try scrolling the rest of the page to see this option in action.&lt;/p&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><code>
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row border-top mt-3 mb-3">
-                        <div class="col"><code>
-                            &lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="offcanvas-header"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-muted">
-                            <h5>Offcanvas with backdrop</h5>
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;/h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="offcanvas-body"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;p&gt;.....&lt;/p&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col"><code>
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row border-top mt-4">
-                        <div class="col"><code>
-                            &lt;div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="offcanvas-header"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-3"><code class="text-muted">
-                            <h5>Backdroped with scrolling</h5>
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;/h5&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;div class="offcanvas-body"&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-2"><code class="text-dark">
-                            &lt;p&gt;Try scrolling the rest of the page to see this option in action.&lt;/p&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col offset-1"><code class="text-warning">
-                            &lt;/div&gt;
-                        </code></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><code>
-                    &lt;/div&gt;
-                        </code></div>
-                    </div>
 
-                        
-
-
-
+                    <div class="user-select-all">
+                        <div class="row border-top">
+                            <div class="col"><code>
+                                &lt;div class="offcanvas offcanvas-start" <span class="text-primary">data-bs-scroll="true" data-bs-backdrop="false"</span> tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="offcanvas-header"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;h5 class="offcanvas-title" id="offcanvasScrollingLabel"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                <h5>Colored with scrolling</h5>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="offcanvas-body"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;p&gt;Try scrolling the rest of the page to see this option in action.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                    <div class="user-select-all">
+                        <div class="row border-top mt-3 mb-3">
+                            <div class="col"><code>
+                                &lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="offcanvas-header"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                <h5>Offcanvas with backdrop</h5>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="offcanvas-body"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;p&gt;.....&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col"><code>
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
+                    <div class="user-select-all">
+                        <div class="row border-top mt-4">
+                            <div class="col"><code>
+                                &lt;div class="offcanvas offcanvas-start" <span class="text-primary">data-bs-scroll="true"</span> tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="offcanvas-header"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-3"><code class="text-muted">
+                                <h5>Backdroped with scrolling</h5>
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;/h5&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;div class="offcanvas-body"&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-2"><code class="text-dark">
+                                &lt;p&gt;Try scrolling the rest of the page to see this option in action.&lt;/p&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col offset-1"><code class="text-warning">
+                                &lt;/div&gt;
+                            </code></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><code>
+                                 &lt;/div&gt;
+                            </code></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
