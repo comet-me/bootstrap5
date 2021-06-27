@@ -100,8 +100,8 @@
       </nav>
     <!-- Heading Container -->
     <div class="container text-center">
-      <h1 class="display-4 mt-4 pt-5">Text
-          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+      <h1 class="display-4 mt-4 pt-5">Popover
+          <a href="https://getbootstrap.com/docs/5.0/components/popovers/" target="_blank" class="text-dark">
               <span class="h1" title="See offical documentation">
                   <i class="fa fa-question-circle" aria-hidden="true"></i>
               </span>
@@ -173,6 +173,28 @@
 
     <!-- TODO: example 2 -->
         <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+
+
+        <!-- ***** Disabled ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+          <h2 class="coo">
+              <a data-bs-toggle="offcanvas" data-bs-target="#example2" aria-controls="example2">
+                  Disabled Popover
+              </a>
+          </h2>
+          <code class="d-inline-block mb-1 aw-code">disabled</code> &
+      </div>
+
+  <!-- # Code Example # -->
+
+  <!-- TODO: example 3 -->
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+          <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+        </span>
+        <div class="container">
+          <h5 class="mt-5"><span class="text-primary"><i class="bi bi-info-circle"></i></span> Note</h5>
+          <p class="lead">For disabled popover triggers, you may also prefer <code>data-bs-trigger="hover focus"</code> so that the popover appears as immediate visual feedback to your users as they may not expect to click on a disabled element.</p>
+        </div>
 
     <footer class="card-footer my-4">
       <small>Author: Romeo Bulalacao Jr.</small>
@@ -292,6 +314,46 @@
                     </div>
                 </div>
                 <button id="copier" type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
+            </div>
+        </div>
+    <!-- End of offcanvas -->
+    <!-- Offcanvas Disabled Popover -->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="example2" aria-labelledby="example2Label">
+            <div class="offcanvas-header">
+                <h5 id="example2Label">
+                    Disabled Popover
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div id="contentt1">
+                  <div class="row">
+                    <div class="col"><code>
+                      &lt;span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover"&gt;
+                    </code></div>
+                  </div>
+                  <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                      &lt;button class="btn btn-primary" type="button" disabled&gt;
+                    </code></div>
+                  </div>
+                  <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                      Disabled button
+                    </code></div>
+                  </div>
+                  <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                      &lt;/button&gt;
+                    </code></div>
+                  </div>
+                  <div class="row">
+                    <div class="col"><code>
+                      &lt;/span&gt;
+                    </code></div>
+                  </div>
+                </div>
+                <button id="copier" type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
             </div>
         </div>
     <!-- End of offcanvas -->

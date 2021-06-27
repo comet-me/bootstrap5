@@ -125,6 +125,13 @@
   overflow: auto;
 }
 
+.aw-scrollspy-example-3 {
+  position: relative;
+  height: 370px;
+  margin-top: 0.5rem;
+  overflow-y: scroll;
+}
+
 @media (min-width: 576px) {
   .aw-px {
     padding-left: 2.75rem !important;
