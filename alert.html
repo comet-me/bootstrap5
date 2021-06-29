@@ -207,8 +207,75 @@
       <div class="alert alert-dark" role="alert">
         This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
       </div>
+        <!-- ***** Container ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo">
+                <a data-bs-toggle="offcanvas" data-bs-target="#example3" aria-controls="example3">
+                   Alert with [additional content]
+                </a>
+            </h2>
+         <code class="d-inline-block mb-1 aw-code">.alert</code> &
+         <code class="d-inline-block mb-1 aw-code">.alert-heading</code>
+     </div>
+     <!-- # Code Example # -->
+     <!-- TODO: example 2 - Container -->
+     <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
 
-  
+       <!-- ***** Container ***** -->
+       <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+        <h2 class="coo">
+            <a data-bs-toggle="offcanvas" data-bs-target="#example4" aria-controls="example4">
+               Icons Alert
+            </a>
+        </h2>
+     <code class="d-inline-block mb-1 aw-code">.alert</code> &
+     <code class="d-inline-block mb-1 aw-code">.alert-link</code>
+ </div>
+ <!-- # Code Example # -->
+ <!-- TODO: example 3 - Container -->
+ <div class="alert alert-primary d-flex align-items-center" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg>
+    <div>
+      An example alert with an icon
+    </div>
+  </div>
+ <div class="alert alert-primary d-flex align-items-center" role="alert">
+    <span class="h4 text-danger"><i class="bi bi-info-circle"></i></span> 
+    <div>
+       &nbsp;An example alert with an icon
+    </div>
+  </div>
+   <!-- ***** Container ***** -->
+   <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+    <h2 class="coo">
+        <a data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+           Dismissing
+        </a>
+    </h2>
+ <code class="d-inline-block mb-1 aw-code">.alert</code> &
+ <code class="d-inline-block mb-1 aw-code">.alert-link</code>
+</div>
+<!-- # Code Example # -->
+<!-- TODO: example 4 - Container -->
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div class="container mb-5">
+      <div class="row">
+          <div class="col">
+              <p class="border-start border-5 ps-2 border-warning lead">When an alert is dismissed, the element is completely removed from the page structure. If a keyboard user dismisses the alert using the close button, their focus will suddenly be lost and, depending on the browser, reset to the start of the page/document. For this reason, we recommend including additional JavaScript that listens for the closed.bs.alert event and programmatically sets focus() to the most appropriate location in the page. If you’re planning to move focus to a non-interactive element that normally does not receive focus, make sure to add <code>tabindex="-1"</code> to the element.</p>
+          </div>
+      </div>
+  </div>
+
 
       <footer class="card-footer my-4">
         <small>Author: Romeo Bulalacao Jr.</small>
@@ -495,6 +562,193 @@
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 <button type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+              </div>
+        </div>
+    </div>
+    <!-- End of offcanvas -->
+    <!-- Offcanvas [alert with additional content] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example3" aria-labelledby="example3Label">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="example3Label">
+        Alerts with additional content
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div&gt; id="contentt2">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="alert alert-success" role="alert"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;h4 class="alert-heading"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        <h4>Well done!</h4>
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/h4&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;p&gt;Some Text.&lt;/p&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;hr&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;p class="mb-0"&gt;Some Text.&lt;/p&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+              </div>
+        </div>
+    </div>
+    <!-- End of offcanvas -->
+    <!-- Offcanvas [icons alert] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example4" aria-labelledby="example4Label">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="example4Label">
+        Icons Alert
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="contentt3">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="alert alert-primary d-flex align-items-center" role="alert"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/svg&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        An example alert with an icon
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="alert alert-primary d-flex align-items-center" role="alert"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;span class="h4 text-danger"&gt;&lt;i class="bi bi-info-circle"&gt;&lt;/i&gt;&lt;/span&gt; 
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &nbsp;An example alert with an icon
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+              </div>
+        </div>
+    </div>
+    <!-- End of offcanvas -->
+    <!-- Offcanvas [dismmising alert] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example5" aria-labelledby="example5Label">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="example5Label">
+        Dismissing
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="contentt4">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;strong&gt;<strong>Holy guacamole</strong>!&lt;/strong&gt; You should check in on some of those fields below.
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                <button type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
               </div>
         </div>
     </div>
