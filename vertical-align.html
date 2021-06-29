@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap v5</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="https://comet-me.github.io/rom/"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Grid
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted">Grid and Flexbox</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                  <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilities
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Utilities</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                  <li><a class="dropdown-item" href="text.html">Text</a></li>
+                  <li><a class="dropdown-item" href="interactions.html">Interactions</a></li>
+                  <li><a class="dropdown-item" href="shadow.html">Shadow</a></li>
+                  <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                  <li><a class="dropdown-item active" href="vertical-align.html">Vertical Align</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compontents
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Content & Components</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+                  <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
+                  <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
+                  <li><a class="dropdown-item" href="offcanvas.html">Offcanvas</a></li>
+                  <li><a class="dropdown-item" href="badge.html">Badge</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  JavaScript
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">JavaScript</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
+                  <li><a class="dropdown-item" href="modal.html">Modal</a></li>
+                  <li><a class="dropdown-item" href="accordion.html">Collapse</a></li>
+                  <li><a class="dropdown-item" href="popover.html">Popover</a></li>
+                  <li><a class="dropdown-item" href="scrollspy.html">Scrollspy</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Template
+                </a>
+                <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item text-muted" aria-disabled="true">Template</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="template1.html">Template Using CDN</a></li>
+                  <li><a class="dropdown-item" href="template2.html">Template2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Heading Container -->
+    <div class="container text-center">
+      <h1 class="display-4 mt-4 pt-5">Vertical Align
+          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+              <span class="h1" title="See offical documentation">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+          </a>
+      </h1>
+      <div class="d-sm-none">
+          <h1>XS</h1>
+          <h5>Portrait Phones</h5>
+          <h6>&#60;576px</h6>
+      </div>                
+      <div class="d-none d-sm-block d-md-none">
+          <h1>SM</h1>
+          <h5>Landscape Phones</h5>
+          <h6>&ge;576px to &#60;768px</h6>
+      </div>
+      <div class="d-none d-md-block d-lg-none">
+          <h1>MD</h1>
+          <h5>Tablets</h5>
+          <h6>&ge;768px to &#60;992px</h6>
+      </div>
+      <div class="d-none d-lg-block d-xl-none">
+          <h1>LG</h1>
+          <h5>Laptops</h5>
+          <h6>&ge;992px to &#60;1200px</h6>
+      </div>
+      <div class="d-none d-xl-block">
+          <h1>XL</h1>
+          <h5>Desktops</h5>
+          <h6>&ge;1200px</h6>
+      </div>
+    </div>
+      <!-- ############ START HERE ############ -->
+      <div id="main-container" class="container">
+
+        <!-- ***** Container ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Vertical Align</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.align-*</code>
+            <code class="d-inline-block mb-1 aw-code"> = { baseline, top, middle, bottom }</code> <br>
+            <code class="d-inline-block mb-1 aw-code">.align-text-*</code>
+            <code class="d-inline-block mb-1 aw-code"> = { top, bottom }</code>
+        </div>
+
+    <!-- # Code Example # -->
+
+    <!-- TODO: example 1 - Container -->
+    <span class="align-baseline">baseline</span>
+    <span class="align-top">top</span>
+    <span class="align-middle">middle</span>
+    <span class="align-bottom">bottom</span>
+    <span class="align-text-top">text-top</span>
+    <span class="align-text-bottom">text-bottom</span>
+    <div class="container mt-4">
+        <div class="row bg-warning p-2 rounded-top">
+            <div class="col">
+                <h5><span class="text-primary"><i class="bi bi-info-circle-fill"></i></span> Please note</h5>
+                <p class="lead">Vertical-align only affects inline, inline-block, inline-table, and table cell elements.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container" class="container">
+
+        <!-- ***** Container ***** -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Vertical Align [table]</a></h2>
+            <code class="d-inline-block mb-1 aw-code">.align-*</code>
+            <code class="d-inline-block mb-1 aw-code"> = { baseline, top, middle, bottom }</code> <br>
+            <code class="d-inline-block mb-1 aw-code">.align-text-*</code>
+            <code class="d-inline-block mb-1 aw-code"> = { top, bottom }</code>
+        </div>
+
+    <!-- # Code Example # -->
+
+    <!-- TODO: example 2 - Container -->
+    <table style="height: 100px;">
+        <tbody>
+          <tr>
+            <td class="align-baseline">baseline</td>
+            <td class="align-top">top</td>
+            <td class="align-middle">middle</td>
+            <td class="align-bottom">bottom</td>
+            <td class="align-text-top">text-top</td>
+            <td class="align-text-bottom">text-bottom</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <footer class="card-footer my-4">
+      <small>Author: Romeo Bulalacao Jr.</small>
+  </footer>
+    </div> <!-- End of Main container -->
+  
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="example1Label">Container</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="contentt">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;span class="align-baseline"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        baseline
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/span&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;span class="align-top"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        top
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/span&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;span class="align-middle"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        middle
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/span&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;span class="align-bottom"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        bottom
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/span&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;span class="align-text-top"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        text-top
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/span&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;span class="align-text-bottom"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        text-bottom
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/span&gt;
+                    </code></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [vertical align table] -->
+    <div class="modal fade" id="example2" tabindex="-1" aria-labelledby="example2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="example2Label">Vertical align [table]</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="contentt1">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;table style="height: 100px;"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;tbody&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;tr&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;td class="align-baseline"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        baseline
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/td&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;td class="align-top"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        top
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/td&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;td class="align-middle"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        middle
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/td&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;td class="align-bottom"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        bottom
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/td&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;td class="align-text-top"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        text-top
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/td&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;td class="align-text-bottom"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-4"><code class="text-success">
+                        text-bottom
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        &lt;/td&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/tr&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/tbody&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/table&gt;
+                    </code></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of Modal -->
+
+  <script src="js/myscript.js"></script>
+    <script src="vendor/popper.js/dist/popper.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
