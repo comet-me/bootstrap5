@@ -56,7 +56,7 @@
                             </li>
                             <li><a class="dropdown-item" href="typography.html">Typography</a></li>
                             <li><a class="dropdown-item" href="Display.html">Images*</a></li>
-                            <li><a class="dropdown-item active" href="table.html">Tables*</a></li>
+                            <li><a class="dropdown-item active" href="table.html">Tables</a></li>
                             <li><a class="dropdown-item" href="Display.html">Figures*</a></li>
                         </ul>
                     </li>
@@ -157,7 +157,7 @@
     <!-- Heading Container -->
     <div class="container text-center">
       <h1 class="display-4 mt-4 pt-5">Table
-          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+          <a href="https://getbootstrap.com/docs/5.0/content/tables/" target="_blank" class="text-dark">
               <span class="h1" title="See offical documentation">
                   <i class="fa fa-question-circle" aria-hidden="true"></i>
               </span>
@@ -243,7 +243,145 @@
       </div>
     <!-- # Code Example # -->
     <!-- TODO: example 1 -->
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="lead">Use contextual classes to color tables, table rows or individual cells.</p>
+
+
+      <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+        <h2 class="coo">
+          <a data-bs-toggle="offcanvas" data-bs-target="#example3" aria-controls="example3">
+            Striped rows
+          </a>
+        </h2>
+        <code class="d-inline-block mb-1 aw-code">.table-striped</code>
+      </div>
+    <!-- # Code Example # -->
+    <!-- TODO: example 1 -->
+    <table class="table table-striped">
+      <tr>
+        <thead>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </thead>
+      </tr>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Don</td>
+          <td>Juan</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>John</td>
+          <td>Nis</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Diego</td>
+          <td>Silang</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <table class="table table-dark table-striped">
+      <tr>
+        <thead>
+          <th>#</th>
+          <th>Name</th>
+          <th>Age</th>
+        </thead>
+      </tr>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ben</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Welson</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <table class="table table-success table-striped">
+      <tr>
+        <thead>
+          <th>#</th>
+          <th>Name</th>
+          <th>Age</th>
+        </thead>
+      </tr>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ben</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Welson</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+      <h2 class="coo">
+        <a data-bs-toggle="offcanvas" data-bs-target="#example4" aria-controls="example4">
+          Active tables
+        </a>
+      </h2>
+      <code class="d-inline-block mb-1 aw-code">.table-active</code>
+    </div>
+  <!-- # Code Example # -->
+  <!-- TODO: example 1 -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Site</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-active">
+        <td>1</td>
+        <td>Jessie</td>
+        <td>Aglipay</td>
+        <td>niceonedotcom</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Nestor</td>
+        <td>Bato</td>
+        <td>callmetoday.ph</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2" class="table-active">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Junrel</td>
+        <td>Loga</td>
+        <td>sitemeagain</td>
+      </tr>
+    </tbody>
+  </table>
   
 
       <footer class="card-footer my-4">
@@ -589,14 +727,222 @@
             </code></div>
           </div>
         </div>
-        <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
             <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             <button type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
-          </div>
     </div>
   </div>
 <!-- End of offcanvas -->
+
+   <!-- Offcanvas [Accented tables] -->
+   <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example3" aria-labelledby="example3Label">
+    <div class="offcanvas-header">
+    <h5 class="offcanvas-title shadow-lg" id="example3Label">
+    Striped rows
+    </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="contentt2">
+          <div class="row">
+            <div class="col"><code>
+              &lt;table class="table <span class="text-primary">table-striped</span>"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              ...
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/table>
+            </code></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col"><code>
+              &lt;table class="table table-dark table-striped"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              ...
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/table&gt;
+            </code></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col"><code>
+              &lt;table class="table table-success table-striped"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              ...
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/table&gt;
+            </code></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col"><code>
+              &lt;table class="table table-hover"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              ...
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/table&gt;
+            </code></div>
+          </div>
+          <br>
+          <p class="bg-dark p-3 text-light"><i class="bi bi-info-circle"></i> You can combined<br> <code class="text-light">.table-striped</code> and <code class="text-light">.table-hover</code></p>
+        </div>
+        <div class="container border-top pt-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+        </div>
+    </div>
+  </div>
+<!-- End of offcanvas [Accented tables] -->
+
+   <!-- Offcanvas [Highlight cell] -->
+   <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example4" aria-labelledby="example4Label">
+    <div class="offcanvas-header">
+    <h5 class="offcanvas-title shadow-lg" id="example4Label">
+    Hightlight Cell
+    </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="contentt3">
+          <div class="row">
+            <div class="col"><code>
+              &lt;table class="table"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;thead&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              ...
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;/thead&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;tbody&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr class="<span class="text-primary">table-active</span>"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              ...
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              ...
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;th scope="row"&gt;3&lt;/th&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td colspan="2" class="<span class="text-primary">table-active</span>"&gt;Larry the Bird&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;@twitter&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              . . .
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;/tbody&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/table&gt;
+            </code></div>
+          </div>
+        </div>
+        <div class="container border-top pt-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+        </div>
+    </div>
+  </div>
+<!-- End of offcanvas [Accented tables] -->
 
     <script src="vendor/popper.js/dist/popper.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
