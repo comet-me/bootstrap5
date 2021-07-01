@@ -281,7 +281,7 @@
 
         <!-- TODO: example 1 - Container -->
         <div class="container">
-            <div class="row justify-content-start aw-highlight aw-height aw-grid">
+            <div class="row justify-content-start aw-highlight aw-grid">
               <div class="col-4">
                 One of two columns
               </div>
@@ -289,7 +289,7 @@
                 One of two columns
               </div>
             </div>
-            <div class="row justify-content-center aw-grid aw-height aw-highlight">
+            <div class="row justify-content-center aw-grid aw-highlight">
               <div class="col-4">
                 One of two columns
               </div>
@@ -297,7 +297,7 @@
                 One of two columns
               </div>
             </div>
-            <div class="row justify-content-end aw-highlight aw-height aw-grid">
+            <div class="row justify-content-end aw-highlight aw-grid">
               <div class="col-4">
                 One of two columns
               </div>
@@ -305,7 +305,7 @@
                 One of two columns
               </div>
             </div>
-            <div class="row justify-content-around aw-highlight aw-height aw-grid">
+            <div class="row justify-content-around aw-highlight aw-grid">
               <div class="col-4">
                 One of two columns
               </div>
@@ -313,7 +313,7 @@
                 One of two columns
               </div>
             </div>
-            <div class="row justify-content-between aw-grid aw-height aw-highlight">
+            <div class="row justify-content-between aw-grid aw-highlight">
               <div class="col-4">
                 One of two columns
               </div>
@@ -321,7 +321,7 @@
                 One of two columns
               </div>
             </div>
-            <div class="row justify-content-evenly aw-grid aw-height aw-highlight">
+            <div class="row justify-content-evenly aw-grid aw-highlight">
               <div class="col-4">
                 One of two columns
               </div>
@@ -329,8 +329,76 @@
                 One of two columns
               </div>
             </div>
-          </div>
+        </div>
 
+        <!-- Column Breaks -->
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo">
+                <a data-bs-toggle="offcanvas" data-bs-target="#example3" aria-controls="example3">
+                    Column [column breaks]
+                </a>
+            </h2>
+            <code class="d-inline-block mb-1 aw-code">.w-100</code>
+        </div>
+
+        <!-- # Code Example # -->
+
+        <!-- TODO: example 1 - Container -->
+        <div class="container">
+            <div class="row aw-grid aw-highlight">
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+          
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            </div>
+        </div>
+
+        <!-- TODO: example 2 -->
+        <a id="ccontainer" data-bs-toggle="offcanvas" data-bs-target="#example4" aria-controls="example4">
+            <div class="container mt-4">
+                <h6>apply specific break</h6>
+                <div class="row aw-grid aw-highlight">
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            
+                <!-- Force next columns to break to new line at md breakpoint and up -->
+                <div class="w-100 d-none d-md-block"></div>
+            
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+                <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+                </div>
+            </div>
+        </a>
+
+        <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+            <h2 class="coo">
+                <a data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+                    Column [Reordering]
+                </a>
+            </h2>
+            <code class="d-inline-block mb-1 aw-code">.order-*</code>
+            <code class="d-inline-block mb-1 aw-code">= { 1, 2, 3, 4, 5}</code>
+        </div>
+          <!-- TODO: example 1 -->
+          <a id="ccontainer" data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+            <div class="container">
+                <div class="row aw-highlight aw-grid">
+                  <div class="col">
+                    First in DOM, no order applied
+                  </div>
+                  <div class="col order-5">
+                    Second in DOM, with a larger order
+                  </div>
+                  <div class="col order-1">
+                    Third in DOM, with an order of 1
+                  </div>
+                </div>
+              </div>
+        </a>
 
 
         <footer class="card-footer my-4">
@@ -340,6 +408,7 @@
     </div>
     <!-- End of Main container -->
 
+    <!-- Vertical Alignment -->
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example1" aria-labelledby="example1Label">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="example1Label">
@@ -653,10 +722,11 @@
             <button type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
         </div>
     </div>
+
     <!-- Horizontal Alignment -->
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example2" aria-labelledby="example2Label">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="example2Label">
+            <h5 class="offcanvas-title shadow-lg" id="example2Label">
                 Column [Horizontal alignment]
             </h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -668,74 +738,487 @@
                         &lt;div class="container"&gt;
                     </code></div>
                 </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row <span class="text-primary">justify-content-start</span> aw-highlight aw-height aw-grid"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row <span class="text-primary">justify-content-center</span> aw-grid aw-height aw-highlight"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row <span class="text-primary">justify-content-end</span> aw-highlight aw-height aw-grid"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row <span class="text-primary">justify-content-around</span> aw-highlight aw-height aw-grid"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
 
+
+
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row <span class="text-primary">justify-content-between</span> aw-grid aw-height aw-highlight"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row <span class="text-primary">justify-content-evenly</span> aw-grid aw-height aw-highlight"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-4"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        One of two columns
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
                 <div class="row">
                     <div class="col"><code>
                         &lt;/div&gt;
                     </code></div>
                 </div>
-                    &lt;div class="row justify-content-start aw-highlight aw-height aw-grid"&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-
-                    &lt;div class="row justify-content-center aw-grid aw-height aw-highlight"&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-
-                    &lt;div class="row justify-content-end aw-highlight aw-height aw-grid"&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-
-                    &lt;div class="row justify-content-around aw-highlight aw-height aw-grid"&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-
-                    &lt;div class="row justify-content-between aw-grid aw-height aw-highlight"&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-
-                    &lt;div class="row justify-content-evenly aw-grid aw-height aw-highlight"&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                      &lt;div class="col-4"&gt;
-                        One of two columns
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-
-
-
-
             </div>
-            <button type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
+            <hr>
+            <div class="container mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+                <button type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
+            </div>
         </div>
     </div>
+    <!-- End of offcanvas [Horizontal Alignment] -->
 
+    <!-- Column breaks -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example3" aria-labelledby="example3Label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title shadow-lg" id="example3Label">
+                Column [Column Breaks]
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="contentt2">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="container"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row aw-grid aw-highlight"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-3"&gt;.col-6 .col-sm-3&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-3"&gt;.col-6 .col-sm-3&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-success fst-italic">
+                        &lt;!-- Force next columns to break to new line --&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="<span class="text-primary">w-100</span>"&gt;&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-3"&gt;.col-6 .col-sm-3&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-3"&gt;.col-6 .col-sm-3&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+            </div>
+            <hr>
+            <div class="container mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+                <button type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of offcanvas [Horizontal Alignment] -->
+    <!-- Column [specific break] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example4" aria-labelledby="example4Label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title shadow-lg" id="example4Label">
+                Column [specific Breaks]
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="contentt3">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="container"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-4"&gt;.col-6 .col-sm-4&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-4"&gt;.col-6 .col-sm-4&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-success fst-italic">
+                        &lt;!-- Force next columns to break to new line at md breakpoint and up --&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="w-100 d-none d-md-block"&gt;&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-4"&gt;.col-6 .col-sm-4&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col-6 col-sm-4"&gt;.col-6 .col-sm-4&lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+            </div>
+            <hr>
+            <div class="container mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+                <button type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of offcanvas [Horizontal Alignment] -->
+
+    <!-- Column [Reordering] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example5" aria-labelledby="example5Label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title shadow-lg" id="example5Label">
+                Column [Reordering]
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="contentt4">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;div class="container"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;div class="row"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        First in DOM, no order applied
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col <span class="text-primary">order-5</span>"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        Second in DOM, with a larger order
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;div class="col <span class="text-primary">order-1</span>"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-3"><code class="text-muted">
+                        Third in DOM, with an order of 1
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-2"><code class="text-dark">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/div&gt;
+                    </code></div>
+                </div>
+            </div>
+            <hr>
+            <div class="container mt-4">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+                <button type="button" data-bs-dismiss="offcanvas" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-dismiss="modal">Copy</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of offcanvas [Horizontal Alignment] -->
 
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fa fa-arrow-up"></i>

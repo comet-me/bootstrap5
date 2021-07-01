@@ -1,3 +1,6 @@
+#ccontainer:hover {
+  cursor: pointer;
+}
 #copier {
   position: fixed;
   top: 2%;
