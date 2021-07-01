@@ -35,7 +35,7 @@
               <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li class="dropdown-item text-muted">Grid and Flexbox</li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                <li><a class="dropdown-item active" href="container.html">Containers</a></li>
                 <li><a class="dropdown-item" href="grid.html">Grid</a></li>
                 <li><a class="dropdown-item" href="grid.html">Grid</a></li>
                 <li><a class="dropdown-item" href="grid.html">Grid</a></li>
@@ -145,7 +145,47 @@
           <h6>&ge;1200px</h6>
       </div>
   </div>
+    <!-- ############ START HERE ############ -->
+    <div id="main-container" class="container">
+      <!-- ***** Container ***** -->
+      <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+          <!-- <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Container</a></h2> -->
+          <h2 class="coo">
+            <a data-bs-toggle="offcanvas" data-bs-target="#example1" aria-controls="example1">
+              info
+            </a>
+        </h2>
+          <code class="d-inline-block mb-1 aw-code">.container</code>
+      </div>
+      <!-- # Code Example # -->
+      <!-- TODO: example 1 -->
+      <table class="table-responsive table-bordered">
+        <tr>
+          <thead>
+            <th>&nbsp;</th>
+            <th>Extra small <br>&lt;576px</th>
+            <th>Small <br>&ge;576px</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.container</td>
+              <td>weh</td>
+              <td>baby</td>
+            </tr>
+          </tbody>
+        </tr>
+
+      </table>
+
+
+      <footer class="card-footer my-4">
+        <small>Author: Romeo Bulalacao Jr.</small>
+      </footer>
+    </div><!-- End of Main Container -->
     
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
     <script src="js/myscript.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/popper.js/dist/popper.min.js"></script>
