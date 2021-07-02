@@ -262,6 +262,77 @@
         <span class="visually-hidden">Loading...</span>
       </div>
 
+      <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+        <h2 class="coo">
+          <a data-bs-toggle="offcanvas" data-bs-target="#example4" aria-controls="example4">
+            Spinners [Margin]
+          </a>
+      </h2>
+        <code class="d-inline-block mb-1 aw-code">.spinner-border</code> &
+        <code class="d-inline-block mb-1 aw-code">.m-5</code> &
+        <code class="d-inline-block mb-1 aw-code">role="status"</code> &
+        <code class="d-inline-block mb-1 aw-code">.visually-hidden</code>
+
+    </div>
+    <!-- # Code Example # -->
+    <!-- TODO: example 1 -->
+    <div class="spinner-border m-5" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+      <h2 class="coo">
+          Spinners [Placement]
+    </h2>
+      <code class="d-inline-block mb-1 aw-code">.d-flex</code> &
+      <code class="d-inline-block mb-1 aw-code">.justify-content-center</code> || 
+      <code class="d-inline-block mb-1 aw-code">.align-items-center</code> <br>
+      <code class="d-inline-block mb-1 aw-code">.spinner-border</code> & 
+      <code class="d-inline-block mb-1 aw-code">role="status"</code> & <br>
+      <code class="d-inline-block mb-1 aw-code">.visually-hidden</code>
+
+  </div>
+  <!-- # Code Example # -->
+  <!-- TODO: example 1 -->
+  <a data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+    <div class="container" id="ccontainer">
+      <div class="row aw-bg-tan p-2">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+    
+    <!-- # Code Example # -->
+    <!-- TODO: example 2 -->
+      <a data-bs-toggle="offcanvas" data-bs-target="#example6" aria-controls="example6">
+        <div class="container mt-4" id="ccontainer">
+          <div class="row aw-bg-tan p-2">
+            <div class="d-flex align-items-center">
+              <strong>Loading...</strong>
+              <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+            </div>
+          </div>
+          </div>
+      </a>
+    <!-- # Code Example # -->
+    <!-- TODO: example 3 -->
+      <a data-bs-toggle="offcanvas" data-bs-target="#example7" aria-controls="example7">
+        <div class="container mt-4" id="ccontainer">
+          <div class="row aw-bg-tan p-2">
+            <div class="clearfix">
+              <div class="spinner-border float-end" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+          </div>
+      </a>
+
       <footer class="card-footer my-4">
         <small>Author: Romeo Bulalacao Jr.</small>
       </footer>
@@ -618,6 +689,7 @@
       </div>
     </div>
     <!-- End of offcanvas -->
+
     <!-- Offcanvas [Spinners -Margin] -->
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example4" aria-labelledby="example4Label">
       <div class="offcanvas-header">
@@ -628,12 +700,193 @@
       </div>
       <div class="offcanvas-body">
           <div id="contentt3">
-
+            <div class="row">
+              <div class="col"><code>
+                &lt;div class="spinner-border m-5" role="status"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;span class="visually-hidden"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-2"><code class="text-dark">
+                Loading...
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;/span&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col"><code>
+                &lt;/div&gt;
+              </code></div>
+            </div>
           </div>
           <hr>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
               <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
               <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <!-- Offcanvas [Spinners -Placement] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example5" aria-labelledby="example5Label">
+      <div class="offcanvas-header">
+      <h6 class="offcanvas-title shadow-lg" id="example5Label">
+        Spinners-Placement [justify-content-center]
+      </h6>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt4">
+            <div class="row">
+              <div class="col"><code>
+                &lt;div class="d-flex <span class="text-primary">justify-content-center</span>"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;div class="spinner-border" role="status"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-2"><code class="text-dark">
+                &lt;span class="visually-hidden"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-3"><code class="text-muted">
+                Loading...
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-2"><code class="text-dark">
+                &lt;/span&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;/div&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col"><code>
+                &lt;/div&gt;
+              </code></div>
+            </div>
+          </div>
+          <hr>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              <button type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <!-- Offcanvas [Spinners -Placement2] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example6" aria-labelledby="example6Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example6Label">
+        Spinners-[align-items-center]
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt5">
+            <div class="row">
+              <div class="col"><code>
+                &lt;div class="d-flex <span class="text-primary">align-items-center</span>"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;strong&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-2"><code class="text-dark">
+                Loading...
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;/strong&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;div class="spinner-border ms-auto" role="status" aria-hidden="true"&gt;&lt;/div&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col"><code>
+                &lt;/div&gt;
+              </code></div>
+            </div>
+          </div>
+          <hr>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              <button type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <!-- Offcanvas [Spinners -Placement3] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example7" aria-labelledby="example7Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example7Label">
+        Spinners-[Floats]
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt6">
+            <div class="row">
+              <div class="col"><code>
+                &lt;div class="clearfix"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;div class="spinner-border float-end" role="status"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-2"><code class="text-dark">
+                &lt;span class="visually-hidden"&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-3"><code class="text-muted">
+                Loading...
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-2"><code class="text-dark">
+                &lt;/span&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col offset-1"><code class="text-warning">
+                &lt;/div&gt;
+              </code></div>
+            </div>
+            <div class="row">
+              <div class="col"><code>
+                &lt;/div&gt;
+              </code></div>
+            </div>
+          </div>
+          <hr>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              <button type="button" onclick="CopyToClipboard6('contentt6');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
       </div>
     </div>
     <!-- End of offcanvas -->
