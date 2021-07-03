@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap v5</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+      <div class="container-fluid">
+          <a class="navbar-brand text-light" href="https://comet-me.github.io/rom/"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
+          <span class="navbar-brand text-light"><a class="text-decoration-none" href="index.html">Bootstrap Playground</a></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Grid
+                    </a>
+                      <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-item text-muted">Grid and Layout</li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                          <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                          <li><a class="dropdown-item" href="breakpoints.html">Breakpoints</a></li>
+                          <li><a class="dropdown-item" href="column.html">Columns</a></li>
+                          <li><a class="dropdown-item" href="gutter.html">Gutter</a></li>
+                          <li><a class="dropdown-item" href="zindex.html">z-index</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Table & Content
+            </a>
+                      <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-item text-muted" aria-disabled="true">Table & Content</li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                          <li><a class="dropdown-item" href="Display.html">Images*</a></li>
+                          <li><a class="dropdown-item" href="table.html">Tables</a></li>
+                          <li><a class="dropdown-item" href="Display.html">Figures*</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Forms
+            </a>
+                      <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-item text-muted" aria-disabled="true">Forms</li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Component
+            </a>
+                      <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-item text-muted" aria-disabled="true">Component</li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="accordion.html">Accordion</a></li>
+                          <li><a class="dropdown-item" href="alert.html">Alerts</a></li>
+                          <li><a class="dropdown-item" href="badge.html">Badge</a></li>
+                          <li><a class="dropdown-item" href="buttons.html">Breadcrumb</a></li>
+                          <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
+                          <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
+                          <li><a class="dropdown-item active" href="cards.html">Card</a></li>
+                          <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
+                          <li><a class="dropdown-item" href="offcanvas.html">Close button</a></li>
+                          <li><a class="dropdown-item" href="offcanvas.html">Collapse</a></li>
+                          <li><a class="dropdown-item" href="offcanvas.html">Dropdowns</a></li>
+                          <li><a class="dropdown-item" href="offcanvas.html">List Group</a></li>
+                          <li><a class="dropdown-item" href="modal.html">Modal</a></li>
+                          <li><a class="dropdown-item" href="modal.html">Navs & tabs</a></li>
+                          <li><a class="dropdown-item" href="modal.html">Navsbar</a></li>
+                          <li><a class="dropdown-item" href="offcanvas.html">Offcanvas</a></li>
+                          <li><a class="dropdown-item" href="offcanvas.html">Pagination</a></li>
+                          <li><a class="dropdown-item" href="popover.html">Popovers</a></li>
+                          <li><a class="dropdown-item" href="popover.html">Progress</a></li>
+                          <li><a class="dropdown-item" href="scrollspy.html">Scrollspy</a></li>
+                          <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
+                          <li><a class="dropdown-item" href="spinners.html">Spinners</a></li>
+                          <li><a class="dropdown-item" href="scrollspy.html">Toasts</a></li>
+                          <li><a class="dropdown-item" href="scrollspy.html">Tooltips</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Utilities
+            </a>
+                      <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-item text-muted" aria-disabled="true">Utilities</li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="interactions.html">Background</a></li>
+                          <li><a class="dropdown-item" href="border.html">Borders</a></li>
+                          <li><a class="dropdown-item" href="border.html">Colors</a></li>
+                          <li><a class="dropdown-item" href="Display.html">Display</a></li>
+                          <li><a class="dropdown-item" href="Display.html">Flex</a></li>
+                          <li><a class="dropdown-item" href="Display.html">Float</a></li>
+                          <li><a class="dropdown-item" href="interactions.html">Interactions</a></li>
+                          <li><a class="dropdown-item" href="modal.html">Overflow</a></li>
+                          <li><a class="dropdown-item" href="modal.html">Position</a></li>
+                          <li><a class="dropdown-item" href="shadow.html">Shadows</a></li>
+                          <li><a class="dropdown-item" href="shadow.html">Sizing</a></li>
+                          <li><a class="dropdown-item" href="spacing.html">Spacing</a></li>
+                          <li><a class="dropdown-item" href="text.html">Text*</a></li>
+                          <li><a class="dropdown-item" href="vertical-align.html">Vertical Align</a></li>
+                          <li><a class="dropdown-item" href="vertical-align.html">Visibility</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other
+            </a>
+                      <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-item text-muted" aria-disabled="true">Template</li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="template1.html">Template Using CDN</a></li>
+                          <li><a class="dropdown-item" href="template2.html">Icons</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+    </nav>
+    <!-- Heading Container -->
+    <div class="container text-center">
+      <h1 class="display-4 mt-4 pt-5">Cards
+          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+              <span class="h1" title="See offical documentation">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+          </a>
+      </h1>
+      <div class="d-sm-none">
+          <h1>XS</h1>
+          <h5>Portrait Phones</h5>
+          <h6>&#60;576px</h6>
+      </div>                
+      <div class="d-none d-sm-block d-md-none">
+          <h1>SM</h1>
+          <h5>Landscape Phones</h5>
+          <h6>&ge;576px to &#60;768px</h6>
+      </div>
+      <div class="d-none d-md-block d-lg-none">
+          <h1>MD</h1>
+          <h5>Tablets</h5>
+          <h6>&ge;768px to &#60;992px</h6>
+      </div>
+      <div class="d-none d-lg-block d-xl-none">
+          <h1>LG</h1>
+          <h5>Laptops</h5>
+          <h6>&ge;992px to &#60;1200px</h6>
+      </div>
+      <div class="d-none d-xl-block">
+          <h1>XL</h1>
+          <h5>Desktops</h5>
+          <h6>&ge;1200px</h6>
+      </div>
+    </div>
+      <!-- ############ START HERE ############ -->
+    <div id="main-container" class="container">
+      <!-- ***** Container ***** -->
+      <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+          <h2 class="coo">
+              Card
+        </h2>
+          <code class="d-inline-block mb-1 aw-code">.card</code> &
+          <code class="d-inline-block mb-1 aw-code">.card-title</code> &
+          <code class="d-inline-block mb-1 aw-code">.card-body</code> &<br>
+          <code class="d-inline-block mb-1 aw-code">.card-subtitle</code> &
+          <code class="d-inline-block mb-1 aw-code">.card-text</code> &
+          <code class="d-inline-block mb-1 aw-code">.card-link</code>
+
+      </div>
+      <!-- # Code Example # -->
+      <!-- TODO: example 1 -->
+      <a data-bs-toggle="offcanvas" data-bs-target="#example1" aria-controls="example1">
+          <div class="container" id="ccontainer">
+              <div class="card" style="width: 18rem;">
+                  <img src="img/f1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+              </div>
+        </div>
+      </a>
+
+
+      <!-- # Code Example # -->
+      <!-- TODO: example 2 -->
+      <a data-bs-toggle="offcanvas" data-bs-target="#example2" aria-controls="example2">
+        <div class="container mt-4" id="ccontainer">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+        </div>
+      </a>
+
+      <!-- # Code Example # -->
+      <!-- TODO: example 1 -->
+      <a data-bs-toggle="offcanvas" data-bs-target="#example3" aria-controls="example3">
+        <div class="container mt-4" id="ccontainer">
+            <div class="card" style="width: 18rem;">
+                <img src="img/linux.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+      </a>
+
+       <!-- ***** Container ***** -->
+       <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+        <h2 class="coo">
+            List groups
+      </h2>
+        <code class="d-inline-block mb-1 aw-code">.card</code> &
+        <code class="d-inline-block mb-1 aw-code">.list-group</code> & <br>
+        <code class="d-inline-block mb-1 aw-code">.list-group-flush</code> &
+        <code class="d-inline-block mb-1 aw-code">.list-group-item</code>
+
+    </div>
+    <!-- # Code Example # -->
+    <!-- TODO: example 1 -->
+    <a data-bs-toggle="offcanvas" data-bs-target="#example4" aria-controls="example4">
+        <div class="container" id="ccontainer">
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+              </div>
+        </div>
+
+    </a>
+      
+  
+
+      <footer class="card-footer my-4">
+        <small>Author: Romeo Bulalacao Jr.</small>
+      </footer>
+    </div> <!-- End of Main container -->
+  
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!-- Offcanvas [Cards] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example1" aria-labelledby="example1Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example1Label">
+      Card
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt">
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;div class="card" style="width: 18rem;"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;img src="..." class="card-img-top" alt="..."&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;div class="card-body"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;h5 class="card-title"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                    Card title
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;/h5&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;p class="card-text"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;/p&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;a href="#" class="btn btn-primary"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                    Go somewhere
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;/a&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+          </div>
+          <hr>
+          <div class="container">
+              <p class="lead" style="text-align: justify;">A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+          </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <!-- Offcanvas [Cards] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example2" aria-labelledby="example2Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example2Label">
+      Card
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt1">
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;div class="<span class="text-primary">card</span>" style="width: 18rem;"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;div class="<span class="text-primary">card-body</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;h5 class="<span class="text-primary">card-title</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                      Card title
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                      &lt;/h5&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;h6 class="<span class="text-primary">card-subtitle</span> mb-2 text-muted"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                      Card subtitle
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                      &lt;/h6&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;p class="<span class="text-primary">card-text</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                      &lt;/p&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;a href="#" class="<span class="text-primary">card-link</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                      Card link
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                      &lt;/a&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;a href="#" class="<span class="text-primary">card-link</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                      Another link
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                      &lt;/a&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+          </div>
+          <hr>
+          <div class="container">
+              <p class="lead" style="text-align: justify;">A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+          </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <button type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+    <!-- Offcanvas [Cards Images] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example3" aria-labelledby="example3Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example3Label">
+      Card [Images top]
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt2">
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;div class="card" style="width: 18rem;"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;img src="..." class="card-img-top" alt="..."&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;div class="card-body"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+          </div>
+          <hr>
+          <div class="container">
+              <h5>Images</h5>
+              <p class="lead" style="text-align: justify;"><code>.card-img-top</code> places an image to the 
+                top of the card. With <code>.card-text</code>, text can be added to the card. 
+                Text within <code>.card-text</code> can also be styled with the standard HTML tags.</p>
+          </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <!-- Offcanvas [List-group] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example4" aria-labelledby="example4Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example4Label">
+      List Group
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt3">
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;div class="card" style="width: 18rem;"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;ul class="<span class="text-primary">list-group list-group-flush</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;li class="list-group-item"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                    An item
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;/li&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;li class="list-group-item"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                    A second item
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;/li&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;li class="list-group-item"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-3"><code class="text-muted">
+                    A third item
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    &lt;/li&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;/ul&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+          </div>
+          <hr>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <script src="vendor/popper.js/dist/popper.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+  </body>
+</html>
