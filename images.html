@@ -223,6 +223,22 @@
         <div class="clearfix"></div>
       </a>
 
+       <!-- TODO: example 4 - Aligning Images -mx-auto -->
+       <a data-bs-toggle="offcanvas" data-bs-target="#example4" aria-controls="example4">
+        <div class="container mt-4" id="ccontainer">
+            <img src="img/f1.jpg" class="rounded mx-auto d-block" alt="...">
+        </div>
+      </a>
+
+       <!-- TODO: example 5 - Aligning Images -text-center -->
+       <a data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+        <div class="container mt-4" id="ccontainer">
+            <div class="text-center">
+                <img src="img/f1.jpg" class="rounded" alt="...">
+              </div>
+        </div>
+      </a>
+
       
   
 
@@ -326,6 +342,74 @@
           </div>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
               <button type="button" onclick="CopyToClipboard2('contentt2');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <!-- Offcanvas [Aligning Images] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example4" aria-labelledby="example4Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example4Label">
+        Aligning Images [mx-auto]
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt3">
+              <div class="row">
+                  <div class="col"><code>
+                      &lt;img src="..." class="rounded mx-auto d-block" alt="..."&gt;
+                  </code></div>
+              </div>
+          </div>
+          <hr>
+          <div class="container">
+              <h5>Picture</h5>
+              <p style="text-align: justify;">
+                If you are using the <code>&lt;picture&gt;</code> element to specify multiple <code>&lt;source&gt;</code> elements for a specific <code>&lt;img&gt;</code>, make sure to add the <code>.img-*</code> classes to the <code>&lt;img&gt;</code> and not to the <code>&lt;picture&gt;</picture></code> tag.
+              </p>
+          </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <button type="button" onclick="CopyToClipboard3('contentt3');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
+    <!-- Offcanvas [text-center] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example5" aria-labelledby="example5Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example5Label">
+        Aligning Images [text-center]
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt4">
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;div class="text-center"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;img src="..." class="rounded" alt="..."&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;/div&gt;
+                  </code></div>
+              </div>
+          </div>
+          <hr>
+          <div class="container">
+              <h5>Picture</h5>
+              <p style="text-align: justify;">
+                If you are using the <code>&lt;picture&gt;</code> element to specify multiple <code>&lt;source&gt;</code> elements for a specific <code>&lt;img&gt;</code>, make sure to add the <code>.img-*</code> classes to the <code>&lt;img&gt;</code> and not to the <code>&lt;picture&gt;</picture></code> tag.
+              </p>
+          </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <button type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
       </div>
     </div>
     <!-- End of offcanvas -->
