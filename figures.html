@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-social/bootstrap-social.css">
@@ -16,36 +14,8 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Bootstrap v5</title>
-</head>
-
-<body>
-
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-    <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "108804294797379");
-    chatbox.setAttribute("attribution", "biz_inbox");
-
-    window.fbAsyncInit = function() {
-        FB.init({
-        xfbml            : true,
-        version          : 'v11.0'
-        });
-    };
-
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- End of messenger chat Plugin Code -->
+  </head>
+  <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
         <div class="container-fluid">
@@ -57,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,7 +47,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Table & Content
               </a>
                         <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -88,7 +58,7 @@
                             <li><a class="dropdown-item" href="typography.html">Typography</a></li>
                             <li><a class="dropdown-item" href="images.html">Images</a></li>
                             <li><a class="dropdown-item" href="table.html">Tables</a></li>
-                            <li><a class="dropdown-item" href="figures.html">Figures</a></li>
+                            <li><a class="dropdown-item active" href="figures.html">Figures</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -186,95 +156,156 @@
             </div>
         </div>
     </nav>
-    <br>
     <!-- Heading Container -->
-    <div class="container text-center pt-5">
-        <div class="d-sm-none">
-            <h1>XS</h1>
-            <h5>Portrait Phones</h5>
-            <h6>&#60;576px</h6>
-        </div>
-        <div class="d-none d-sm-block d-md-none">
-            <h1>SM</h1>
-            <h5>Landscape Phones</h5>
-            <h6>&ge;576px to &#60;768px</h6>
-        </div>
-        <div class="d-none d-md-block d-lg-none">
-            <h1>MD</h1>
-            <h5>Tablets</h5>
-            <h6>&ge;768px to &#60;992px</h6>
-        </div>
-        <div class="d-none d-lg-block d-xl-none">
-            <h1>LG</h1>
-            <h5>Laptops</h5>
-            <h6>&ge;992px to &#60;1200px</h6>
-        </div>
-        <div class="d-none d-xl-block">
-            <h1>XL</h1>
-            <h5>Desktops</h5>
-            <h6>&ge;1200px</h6>
-        </div>
-
-        <h1 class="display-4 mt-4">Getting Started</h1>
-        <h4 class="mt-4">Get Bootstrap</h4>
-        <div class="d-block">
-            <a href="https://getbootstrap.com/" target="_blank">Bootstrap Docs</a>
-        </div>
-        <h4 class="mt-4">Visual Studio Code</h4>
-        <div class="d-block">
-            <a href="https://code.visualstudio.com/Download" target="_blank">VS Code Software</a>
-        </div>
-
-        <h4 class="mt-4">Visual Studio Code Extensions</h4>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css" target="_blank">HTML CSS Support</a>
-        </div>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion" target="_blank">IntelliSense for CSS class names</a>
-        </div>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a>
-        </div>
-        <div class="d-block">
-            <a href="https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete" target="_blank">Path Autocomplete</a>
-        </div>
-        <h1 class="display-4 mt-4">Resources</h1>
-        <h4 class="mt-4">Tools</h4>
-        <div>
-            <a href="https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/" target="_blank" class="text-danger">Bootstrap Cheatsheet</a>
-        </div>
-        <div>
-            <a href="https://offroadcode.com/rem-calculator" target="_blank">REM Calculator</a>
-        </div>
-
-        <h4 class="mt-4">Visual Studio Code (VS Code)</h4>
-        <div>
-            <a href="https://code.visualstudio.com/Download" target="_blank">VS Code Software</a>
-        </div>
-        <h6 class="mt-4">Keyboard Shortcuts (cloud)</h6>
-        <div>
-            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank">Mac Keyboard Shortcuts (cloud)</a>
-        </div>
-        <div>
-            <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank">Windows Keyboard Shortcuts (cloud)</a>
-        </div>
-        <h6 class="mt-4">Keyboard Shortcuts (local)</h6>
-        <div>
-            <a href="resources/docs/keyboard-shortcuts-macos.pdf" target="_blank">Mac Keyboard Shortcuts (local)</a>
-        </div>
-        <div>
-            <a href="resources/docs/keyboard-shortcuts-windows.pdf" target="_blank">Windows Keyboard Shortcuts (local)</a>
-        </div>
-        <footer class="card-footer my-4">
-            <small>Author: Romeo Bulalacao Jr.</small>
-        </footer>
+    <div class="container text-center">
+      <h1 class="display-4 mt-4 pt-5">Figures
+          <a href="https://getbootstrap.com/docs/5.0/content/figures/" target="_blank" class="text-dark">
+              <span class="h1" title="See offical documentation">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </span>
+          </a>
+      </h1>
+      <div class="d-sm-none">
+          <h1>XS</h1>
+          <h5>Portrait Phones</h5>
+          <h6>&#60;576px</h6>
+      </div>                
+      <div class="d-none d-sm-block d-md-none">
+          <h1>SM</h1>
+          <h5>Landscape Phones</h5>
+          <h6>&ge;576px to &#60;768px</h6>
+      </div>
+      <div class="d-none d-md-block d-lg-none">
+          <h1>MD</h1>
+          <h5>Tablets</h5>
+          <h6>&ge;768px to &#60;992px</h6>
+      </div>
+      <div class="d-none d-lg-block d-xl-none">
+          <h1>LG</h1>
+          <h5>Laptops</h5>
+          <h6>&ge;992px to &#60;1200px</h6>
+      </div>
+      <div class="d-none d-xl-block">
+          <h1>XL</h1>
+          <h5>Desktops</h5>
+          <h6>&ge;1200px</h6>
+      </div>
     </div>
-    <!-- End Container -->
+      <!-- ############ START HERE ############ -->
+    <div id="main-container" class="container">
+      <!-- ***** Container ***** -->
+      <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+          <!-- <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Container</a></h2> -->
+          <h2 class="coo">
+            <a data-bs-toggle="offcanvas" data-bs-target="#example1" aria-controls="example1">
+              Figure
+            </a>
+        </h2>
+          <code class="d-inline-block mb-1 aw-code">.figure</code> &
+          <code class="d-inline-block mb-1 aw-code">.figure-caption</code> 
+      </div>
+      <!-- # Code Example # -->
+      <!-- TODO: example 1 -->
+      <div class="container">
+        <figure class="figure">
+        <img src="img/angel.jpg" class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+      </div>
 
-    <script src="js/myscript.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+       <!-- ***** Container ***** -->
+       <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+        <h2 class="coo">
+          <a data-bs-toggle="offcanvas" data-bs-target="#example2" aria-controls="example2">
+            Figure [Align figure-caption]
+          </a>
+      </h2>
+        <code class="d-inline-block mb-1 aw-code">.figure-img</code> &
+        <code class="d-inline-block mb-1 aw-code">.img-fluid</code> & <br>
+        <code class="d-inline-block mb-1 aw-code">.rounded</code> &
+        <code class="d-inline-block mb-1 aw-code">.text-end</code>
+    </div>
+    <!-- # Code Example # -->
+    <!-- TODO: example 1 -->
+    <div class="container">
+        <figure class="figure">
+            <img src="img/angel.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
+          </figure>
+    </div>
+      
+  
+
+      <footer class="card-footer my-4">
+        <small>Author: Romeo Bulalacao Jr.</small>
+      </footer>
+    </div> <!-- End of Main container -->
+  
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!-- Offcanvas [title] -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example1" aria-labelledby="example1Label">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title shadow-lg" id="example1Label">
+      Figure
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div id="contentt">
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;figure class="<span class="text-primary">figure</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;img src="..." class="figure-img img-fluid rounded" alt="..."&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;figcaption class="<span class="text-primary">figure-caption</span>"&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-2"><code class="text-dark">
+                    A caption for the above image.
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col offset-1"><code class="text-warning">
+                    &lt;/figcaption&gt;
+                  </code></div>
+              </div>
+              <div class="row">
+                  <div class="col"><code>
+                    &lt;/figure&gt;
+                  </code></div>
+              </div>
+          </div>
+          <hr>
+          <div class="container">
+              <p class="lead" style="text-align: justify;">Anytime you need to display a piece of 
+                content—like an image with an optional caption, consider using a <code>&lt;figure&gt;</code>.
+
+                Use the included <code>.figure</code>, <code>.figure-img</code> and <code>.figure-caption</code> 
+                classes to provide some baseline styles for the HTML5 <code>&lt;figure&gt;</code> and
+                 <code>&lt;figcaption&gt;</code> elements. Images in figures have no explicit size, 
+                 so be sure to add the <code>.img-fluid</code> class to your <code>&lt;img&gt;</code> to make it responsive.
+            </p>
+          </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+      </div>
+    </div>
+    <!-- End of offcanvas -->
+
     <script src="vendor/popper.js/dist/popper.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <script src="js/myscript.js"></script>
+  </body>
 </html>
