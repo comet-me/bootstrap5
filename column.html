@@ -23,18 +23,19 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="https://comet-me.github.io/rom/"><img src="img/home.png" alt="" class="bg-gradient rounded" style="height: 2rem; width: 2rem"></a>
+            <span class="navbar-brand text-light"><a class="text-decoration-none" href="index.html">Bootstrap Playground</a></span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Grid
-                        </a>
+                          Grid
+                      </a>
                         <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="dropdown-item text-muted">Grid and Layout</li>
                             <li>
@@ -42,10 +43,10 @@
                             </li>
                             <li><a class="dropdown-item" href="container.html">Containers</a></li>
                             <li><a class="dropdown-item" href="grid.html">Grid</a></li>
-                            <li><a class="dropdown-item" href="breakpoints.html">Breakpoints*</a></li>
+                            <li><a class="dropdown-item" href="breakpoints.html">Breakpoints</a></li>
                             <li><a class="dropdown-item active" href="column.html">Columns</a></li>
-                            <li><a class="dropdown-item" href="grid.html">Gutter*</a></li>
-                            <li><a class="dropdown-item" href="grid.html">z-index*</a></li>
+                            <li><a class="dropdown-item" href="gutter.html">Gutter</a></li>
+                            <li><a class="dropdown-item" href="zindex.html">z-index</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -58,9 +59,9 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="typography.html">Typography</a></li>
-                            <li><a class="dropdown-item" href="Display.html">Images*</a></li>
-                            <li><a class="dropdown-item" href="Display.html">Tables*</a></li>
-                            <li><a class="dropdown-item" href="Display.html">Figures*</a></li>
+                            <li><a class="dropdown-item" href="images.html">Images</a></li>
+                            <li><a class="dropdown-item" href="table.html">Tables</a></li>
+                            <li><a class="dropdown-item" href="figures.html">Figures</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -90,7 +91,7 @@
                             <li><a class="dropdown-item" href="buttons.html">Breadcrumb</a></li>
                             <li><a class="dropdown-item" href="buttons.html">Buttons</a></li>
                             <li><a class="dropdown-item" href="buttonsgroup.html">Buttons Group</a></li>
-                            <li><a class="dropdown-item" href="buttonsgroup.html">Card</a></li>
+                            <li><a class="dropdown-item" href="cards.html">Card</a></li>
                             <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
                             <li><a class="dropdown-item" href="offcanvas.html">Close button</a></li>
                             <li><a class="dropdown-item" href="offcanvas.html">Collapse</a></li>
@@ -105,7 +106,7 @@
                             <li><a class="dropdown-item" href="popover.html">Progress</a></li>
                             <li><a class="dropdown-item" href="scrollspy.html">Scrollspy</a></li>
                             <li><a class="dropdown-item" href="scrollbar.html">Scrollbar Custom</a></li>
-                            <li><a class="dropdown-item" href="scrollspy.html">Spinners</a></li>
+                            <li><a class="dropdown-item" href="spinners.html">Spinners</a></li>
                             <li><a class="dropdown-item" href="scrollspy.html">Toasts</a></li>
                             <li><a class="dropdown-item" href="scrollspy.html">Tooltips</a></li>
                         </ul>
@@ -141,12 +142,13 @@
                 Other
               </a>
                         <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="dropdown-item text-muted" aria-disabled="true">Template</li>
+                            <li class="dropdown-item text-muted" aria-disabled="true">Others</li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="template1.html">Template Using CDN</a></li>
                             <li><a class="dropdown-item" href="template2.html">Icons</a></li>
+                            <li><a class="dropdown-item active" href="messengerchat.html">Adding chatbot[Messenger]</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -209,17 +211,20 @@
         <!-- # Code Example # -->
         <!-- TODO: example 1 - Container -->
         <a data-bs-toggle="offcanvas" data-bs-target="#example1" aria-controls="example1">
-            <div class="container" id="ccontainer">
-                <div class="row aw-grid">
-                    <div class="col">Column</div>
-                    <div class="col">Column</div>
-                    <div class="col">Column</div>
+            <span title="Click here to the codes">
+                <div class="container" id="ccontainer">
+                    <div class="row aw-grid">
+                        <div class="col">Column</div>
+                        <div class="col">Column</div>
+                        <div class="col">Column</div>
+                    </div>
                 </div>
-            </div>
+            </span>
         </a>
         <br>
         <!-- TODO: example 2 -start-->
         <a data-bs-toggle="offcanvas" data-bs-target="#example2" aria-controls="example2">
+            <span title="Click here to the codes">
             <div class="container mt-4" id="ccontainer">
                 <div class="row align-items-start aw-grid aw-height aw-highlight">
                   <div class="col">
@@ -233,26 +238,30 @@
                   </div>
                 </div>
             </div>
+            </span>
         </a>
 
         <!-- TODO: example 3 -center-->
         <a data-bs-toggle="offcanvas" data-bs-target="#example3" aria-controls="example3">
-            <div class="container mt-4" id="ccontainer">
-                <div class="row align-items-center aw-grid aw-highlight aw-height">
-                    <div class="col">
-                    One of three columns
-                    </div>
-                    <div class="col">
-                    One of three columns
-                    </div>
-                    <div class="col">
-                    One of three columns
+            <span title="Click here to the codes">
+                <div class="container mt-4" id="ccontainer">
+                    <div class="row align-items-center aw-grid aw-highlight aw-height">
+                        <div class="col">
+                        One of three columns
+                        </div>
+                        <div class="col">
+                        One of three columns
+                        </div>
+                        <div class="col">
+                        One of three columns
+                        </div>
                     </div>
                 </div>
-            </div>
+            </span>
         </a>
         <!-- TODO: example 4 -end-->
         <a data-bs-toggle="offcanvas" data-bs-target="#example4" aria-controls="example4">
+            <span title="Click here to the codes">
             <div class="container mt-4" id="ccontainer">
                 <div class="row align-items-end aw-grid aw-height aw-highlight">
                   <div class="col">
@@ -266,11 +275,13 @@
                   </div>
                 </div>
             </div>
+            </span>
         </a>
 
         <br>
         <!-- TODO: example 4 -self -->
         <a data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+            <span title="Click here to the codes">
             <div class="container">
                 <div class="row aw-highlight aw-grid aw-height">
                 <div class="col align-self-start">
@@ -284,6 +295,7 @@
                 </div>
                 </div>
             </div>
+            </span>
         </a>
 
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
@@ -298,6 +310,7 @@
 
         <!-- TODO: example 1 - Container -->
         <a data-bs-toggle="offcanvas" data-bs-target="#example6" aria-controls="example6">
+            <span title="Click here to the codes">
             <div class="container" id="ccontainer">
                 <div class="row justify-content-start aw-highlight aw-grid">
                     <div class="col-4">
@@ -308,22 +321,26 @@
                     </div>
                 </div>
             </div>
+            </span>
         </a>
         <!-- TODO: example 2 [center] -->
         <a data-bs-toggle="offcanvas" data-bs-target="#example7" aria-controls="example7">
-            <div class="container mt-4">
-                <div class="row justify-content-center aw-grid aw-highlight">
-                    <div class="col-4">
-                      One of two columns
-                    </div>
-                    <div class="col-4">
-                      One of two columns
+            <span title="Click here to the codes">
+                <div class="container mt-4">
+                    <div class="row justify-content-center aw-grid aw-highlight">
+                        <div class="col-4">
+                        One of two columns
+                        </div>
+                        <div class="col-4">
+                        One of two columns
+                        </div>
                     </div>
                 </div>
-            </div>
+            </span>
         </a>
         <!-- TODO: example 3 [end] -->
         <a data-bs-toggle="offcanvas" data-bs-target="#example8" aria-controls="example8">
+            <span title="Click here to the codes">
             <div class="container mt-4" id="ccontainer">
                 <div class="row justify-content-end aw-highlight aw-grid">
                     <div class="col-4">
@@ -334,9 +351,11 @@
                     </div>
                   </div>
             </div>
+            </span>
         </a>
         <!-- TODO: example 4 [content-around] -->
         <a data-bs-toggle="offcanvas" data-bs-target="#example9" aria-controls="example9">
+            <span title="Click here to the codes">
             <div class="container mt-4" id="ccontainer">
                 <div class="row justify-content-around aw-highlight aw-grid">
                     <div class="col-4">
@@ -347,9 +366,11 @@
                     </div>
                   </div>
             </div>
+            </span>
         </a>
          <!-- TODO: example 4 [content-between] -->
          <a data-bs-toggle="offcanvas" data-bs-target="#example10" aria-controls="example10">
+            <span title="Click here to the codes">
              <div class="container mt-4" id="ccontainer">
                  <div class="row justify-content-between aw-grid aw-highlight">
                      <div class="col-4">
@@ -363,6 +384,7 @@
         </a>
          <!-- TODO: example 4 [content-evenly] -->
          <a data-bs-toggle="offcanvas" data-bs-target="#example11" aria-controls="example11">
+            <span title="Click here to the codes">
              <div class="container mt-4" id="ccontainer">
                  <div class="row justify-content-evenly aw-grid aw-highlight">
                      <div class="col-4">
@@ -373,6 +395,7 @@
                      </div>
                  </div>
              </div>
+             </span>
         </a>
 
         <!-- Column Breaks -->
@@ -387,6 +410,7 @@
 
         <!-- TODO: example 1 - Container -->
         <a data-bs-toggle="offcanvas" data-bs-target="#example12" aria-controls="example12">
+            <span title="Click here to the codes">
             <div class="container" id="ccontainer">
                 <div class="row aw-grid aw-highlight">
                   <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
@@ -399,10 +423,12 @@
                   <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
                 </div>
             </div>
+            </span>
         </a>
 
         <!-- TODO: example 2 -->
         <a id="ccontainer" data-bs-toggle="offcanvas" data-bs-target="#example13" aria-controls="example13">
+            <span title="Click here to the codes">
             <div class="container mt-4">
                 <h6>apply specific break</h6>
                 <div class="row aw-grid aw-highlight">
@@ -416,6 +442,7 @@
                 <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
                 </div>
             </div>
+            </span>
         </a>
 
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
@@ -427,6 +454,7 @@
         </div>
           <!-- TODO: example 1 -->
           <a id="ccontainer" data-bs-toggle="offcanvas" data-bs-target="#example14" aria-controls="example14">
+            <span title="Click here to the codes">
             <div class="container" id="ccontainer">
                 <div class="row aw-highlight aw-grid">
                   <div class="col">
@@ -440,6 +468,7 @@
                   </div>
                 </div>
               </div>
+              </span>
         </a>
 
 
@@ -1532,7 +1561,9 @@
     <!-- End of offcanvas [Horizontal Alignment] -->
 
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <span title="Click here to the top">
         <i class="fa fa-arrow-up"></i>
+        </span>
       </button>
 
     <script src="js/myscript.js"></script>

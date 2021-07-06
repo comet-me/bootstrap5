@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,15 +47,15 @@
                       </ul>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Table & Content
-                    </a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Table & Content
+            </a>
                       <ul id="ggrid" class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li class="dropdown-item text-muted" aria-disabled="true">Table & Content</li>
                           <li>
                               <hr class="dropdown-divider">
                           </li>
-                          <li><a class="dropdown-item active" href="typography.html">Typography</a></li>
+                          <li><a class="dropdown-item" href="typography.html">Typography</a></li>
                           <li><a class="dropdown-item" href="images.html">Images</a></li>
                           <li><a class="dropdown-item" href="table.html">Tables</a></li>
                           <li><a class="dropdown-item" href="figures.html">Figures</a></li>
@@ -835,8 +835,25 @@
             </div>
           </div>
           <hr>
+          <div class="container">
+            <strong>If you want to style your text, you should use the following classes instead:</strong>
+            <ul>
+              <li>
+                .mark will apply the same styles as <code>&lt;mark&gt;</code>.
+              </li>
+              <li>
+                .small will apply the same styles as <code>&lt;small&gt;</code>.
+              </li>
+              <li>
+                .text-decoration-underline will apply the same styles as <code>&lt;u&gt;</code>.
+              </li>
+              <li>
+                .text-decoration-line-through will apply the same styles as <code>&lt;s&gt;</code>.
+              </li>
+            </ul>
+          </div>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
-              <button type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+              <button type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
       </div>
     </div>
     <!-- End of offcanvas -->
