@@ -158,7 +158,7 @@
     <!-- Heading Container -->
     <div class="container text-center">
       <h1 class="display-4 mt-4 pt-5">Buttons
-          <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" class="text-dark">
+          <a href="https://getbootstrap.com/docs/5.0/components/buttons/" target="_blank" class="text-dark">
               <span class="h1" title="See offical documentation">
                   <i class="fa fa-question-circle" aria-hidden="true"></i>
               </span>
@@ -195,7 +195,11 @@
 
         <!-- ***** Container ***** -->
         <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
-            <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">Buttons</a></h2>
+            <h2 class="coo"><a data-bs-toggle="modal" data-bs-target="#example1">
+                <span title="Click here to view the code">
+                    Buttons
+                </span>
+            </a></h2>
             <code class="d-inline-block mb-1 aw-code">.btn</code>
         </div>
 
@@ -212,6 +216,28 @@
     <button type="button" class="btn btn-dark">Dark</button>
 
     <button type="button" class="btn btn-link">Link</button>
+     <!-- ***** Container ***** -->
+     <div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+        <h2 class="coo">
+            <a data-bs-toggle="modal" data-bs-target="#example2">
+                <span title="Click here to view the code">
+                    Button tags
+                </span>
+            </a></h2>
+        <code class="d-inline-block mb-1 aw-code">.btn</code>
+    </div>
+
+<!-- # Code Example # -->
+
+<!-- TODO: example 1 - Container -->
+        <div class="container" id="ccontainer">
+            <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+    
   
 
 
@@ -223,163 +249,242 @@
   
 
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-      <i class="fa fa-arrow-up"></i>
+        <span title="Click here to go top">
+            <i class="fa fa-arrow-up"></i>
+        </span>
     </button>
-<!-- Modal -->
-<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="example1Label">Buttons</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div id="contentt">
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-primary"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-primary">
-                    Primary
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-secondary"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-secondary">
-                    Secondary
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-success"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-success">
-                    Success
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-danger"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-danger">
-                    Danger
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-warning"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-warning">
-                    Warning
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-info"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-info">
-                    Info
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-light"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class=" bg-dark text-light">
-                    Light
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-dark"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code class="text-dark">
-                    Dark
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;button type="button" class="btn btn-link"&gt;
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col offset-1"><code>
-                    Link
-                </code></div>
-            </div>
-            <div class="row">
-                <div class="col"><code>
-                    &lt;/button&gt;
-                </code></div>
+    <!-- Modal -->
+    <div class="modal fade" id="example1" tabindex="-1" aria-labelledby="example1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="example1Label">Buttons</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="contentt">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-primary"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-primary">
+                        Primary
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-secondary"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-secondary">
+                        Secondary
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-success"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-success">
+                        Success
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-danger"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-danger">
+                        Danger
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-warning"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        Warning
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-info"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-info">
+                        Info
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-light"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class=" bg-dark text-light">
+                        Light
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-dark"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-dark">
+                        Dark
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button type="button" class="btn btn-link"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code>
+                        Link
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
             </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
-      </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard('contentt');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+    </div>
+    <!-- end of Modal -->
+    <!-- Modal [Button tags] -->
+    <div class="modal fade" id="example2" tabindex="-1" aria-labelledby="example2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="example2Label">Button tags</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="contentt1">
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;a class="btn btn-primary" href="#" role="button"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        Link
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/a&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;button class="btn btn-primary" type="submit"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col offset-1"><code class="text-warning">
+                        Button
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;/button&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;input class="btn btn-primary" type="button" value="Input"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;input class="btn btn-primary" type="submit" value="Submit"&gt;
+                    </code></div>
+                </div>
+                <div class="row">
+                    <div class="col"><code>
+                        &lt;input class="btn btn-primary" type="reset" value="Reset"&gt;
+                    </code></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" onclick="CopyToClipboard1('contentt1');return false;" class="btn btn-outline-primary" data-bs-dismiss="modal">Copy</button>
+        </div>
+        <div class="container bg-warning p-2 text-muted">
+            <p style="text-align:justify;">The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> 
+                element. However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> 
+                    elements (though some browsers may apply a slightly different rendering).
+                    <br>
+                When using button classes on <code>&lt;a&gt;</code> elements that are used to trigger in-page
+                 functionality (like collapsing content), rather than linking to new pages
+                  or sections within the current page, these links should be given a <code>role="button"</code> to
+                   appropriately convey their purpose to assistive technologies such as screen readers.
+                </p>
+        </div>
+        </div>
+    </div>
+    </div>
     <!-- end of Modal -->
 
   <script src="js/myscript.js"></script>
