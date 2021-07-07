@@ -430,6 +430,122 @@
     </tr>
   </tbody>
 </table>
+
+<div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+  <h2 class="coo">
+    <a data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+      without borders
+    </a>
+  </h2>
+  <code class="d-inline-block mb-1 aw-code">.table-borderless</code>
+</div>
+<!-- # Code Example # -->
+<!-- TODO: example 1 -->
+<a data-bs-toggle="offcanvas" data-bs-target="#example5" aria-controls="example5">
+  <span title="Click here to view the code">
+    <div class="container" id="ccontainer">
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Site</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Jessie</td>
+            <td>Aglipay</td>
+            <td>niceonedotcom</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Nestor</td>
+            <td>Bato</td>
+            <td>callmetoday.ph</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Junrel</td>
+            <td>Loga</td>
+            <td>sitemeagain</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </span>
+</a>
+
+<div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+  <h2 class="coo">
+      small table
+  </h2>
+  <code class="d-inline-block mb-1 aw-code">.table .table-sm</code>
+</div>
+<!-- # Code Example # -->
+<!-- TODO: example 1 -->
+<table class="table table-sm">
+  <tr>
+    <thead>
+      <th>#</th>
+      <th>normal</th>
+      <th>high</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>yes</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>no</td>
+        <td>no</td>
+      </tr>
+    </tbody>
+  </tr>
+</table>
+
+<div class="mt-4 mb-2 bg-dark text-light p-3 rounded">
+  <h2 class="coo">
+    <a data-bs-toggle="offcanvas" data-bs-target="#example6" aria-controls="example6">
+      Vertical Align
+    </a>
+  </h2>
+  <code class="d-inline-block mb-1 aw-code">.table .table-sm</code>
+</div>
+<!-- # Code Example # -->
+<!-- TODO: example 1 -->
+<div class="table-responsive">
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        <td>#</td>
+        <td>Green</td>
+        <td>Yellow</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, doloribus.</td>
+        <td>This may inherit from the parent class (middle)</td>
+      </tr>
+      <tr class="align-bottom">
+        <td>2</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae.</td>
+        <td>this align to the bottom of the cell from tr element</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus totam incidunt molestiae nihil dolorum enim sit itaque, vel nostrum et debitis deserunt iste asperiores velit iure ut ab cum id cumque voluptates corrupti. Perferendis facilis nulla vero placeat architecto? <span class="text-warning">This will inherit from parent element (middle)</span></td>
+        <td class="align-top">This cell is aligned to the top.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
   
 
       <footer class="card-footer my-4">
@@ -987,7 +1103,338 @@
         </div>
     </div>
   </div>
-<!-- End of offcanvas [Accented tables] -->
+<!-- End of offcanvas [Hightlight cell] -->
+
+   <!-- Offcanvas [Borderless cell] -->
+   <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example5" aria-labelledby="example5Label">
+    <div class="offcanvas-header">
+    <h5 class="offcanvas-title shadow-lg" id="example5Label">
+    Borderless
+    </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="contentt4">
+          <div class="row">
+            <div class="col"><code>
+              &lt;table class="table table-borderless"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;thead&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;th&gt;#&lt;/th&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;th&gt;Name&lt;/th&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;th&gt;Location&lt;/th&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;th&gt;Site&lt;/th&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;/thead&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;tbody&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;1&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;Jessie&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;Aglipay&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;niceonedotcom&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;2&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;Nestor&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;Bato&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;callmetoday.ph&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;3&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;Junrel&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;Loga&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;td&gt;sitemeagain&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;/tbody&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/table&gt;
+            </code></div>
+          </div>
+        </div>
+        <div class="container border-top pt-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" onclick="CopyToClipboard4('contentt4');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+        </div>
+    </div>
+  </div>
+<!-- End of offcanvas [Borderless cell] -->
+
+   <!-- Offcanvas [vertical align] -->
+   <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="example6" aria-labelledby="example6Label">
+    <div class="offcanvas-header">
+    <h5 class="offcanvas-title shadow-lg" id="example6Label">
+    Vertical align
+    </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="contentt5">
+          <div class="row">
+            <div class="col"><code>
+              &lt;div class="table-responsive"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;table class="table align-middle"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;thead&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;#&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;Green&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;Yellow&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/thead&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;tbody&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;1&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;no&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;yes&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;tr class="align-bottom"&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;2&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;no&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;no&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;2&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td&gt;yes&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-4"><code>
+              &lt;td class="align-top"&gt;This cell is aligned to the top.&lt;/td&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-3"><code class="text-muted">
+              &lt;/tr&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-2"><code class="text-dark">
+              &lt;/tbody&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col offset-1"><code class="text-warning">
+              &lt;/table&gt;
+            </code></div>
+          </div>
+          <div class="row">
+            <div class="col"><code>
+              &lt;/div&gt;
+            </code></div>
+          </div>
+          
+        </div>
+        <div class="container border-top pt-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" onclick="CopyToClipboard5('contentt5');return false;" class="btn btn-outline-primary" data-bs-dismiss="offcanvas">Copy</button>
+        </div>
+    </div>
+  </div>
+<!-- End of offcanvas [Vertical align] -->
 
     <script src="vendor/popper.js/dist/popper.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
